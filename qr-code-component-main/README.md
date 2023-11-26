@@ -26,7 +26,7 @@ The HTML shows a QR code with a text explain following the instructions given an
 
 ### Links
 
-- Solution URL: [https://getfireshot.com/]
+- Solution URL: [https://main--polite-sprinkles-d69133.netlify.app/]
 
 ## My process
 
