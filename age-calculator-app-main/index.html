@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <script type="text/javascript" src="./script.js"></script>
+  
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="input-block">
+        <label id="dayLabel" for="dayInput">DAY</label>
+        <input id="dayInput" type="number" max="31" min="1" placeholder="DD" onfocus="restoreStyle('day')" >
+        <span class="error" id="dayError"></span>
+      </div>
+
+      <div class="input-block">
+        <label id="monthLabel" for="monthInput">MONTH</label>
+        <input id="monthInput" type="number" max="12" min="1" placeholder="MM" onfocus="restoreStyle('month')" >
+        <span class="error" id="monthError"></span>
+      </div>
+
+      <div class="input-block">
+        <label id="yearLabel" for="yearInput">YEAR</label>
+        <input id="yearInput" type="number" max="2023" min="0" placeholder="YYYY" onfocus="restoreStyle('year')" >
+        <span class="error" id="yearError"></span>
+      </div>
+
+      <div class="separator"><hr><button id="submit-btn" type="button" onclick="onSubmit()" ><img src="./assets/images/icon-arrow.svg" alt="submit" width="65px"></button></div>
+    </form>
+
+    <p class="result"><span id="years">--</span><span id="tag-years">years</span></p>
+    <p class="result"><span id="months">--</span><span id="tag-months">months</span></p>
+    <p class="result"><span id="days">--</span><span id="tag-days">days</span></p>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Iván</a>.
+  </div>
+</body>
+</html>

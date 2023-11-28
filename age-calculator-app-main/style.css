@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0 20px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    min-width: fit-content;
+    max-width: 800px;
+    width: 55%;
+    margin: auto;
+    padding: 3% 4%;
+    border-radius: 20px 20px 30% 20px;
+}
+
+.input-block {
+    display: inline-block;
+    width: 25%;
+    height: 150px;
+    margin-right: 10px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: hsl(0, 1%, 44%);
+    display: block;
+    padding: 10px 10px 10px 0;
+    letter-spacing: 5px;
+}
+
+input {
+    display: block;
+    font-size: 2rem;
+    width: 90%;
+    padding: 10px 0px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 86%);
+    outline: none;
+    cursor: pointer;
+}
+
+input:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    appearance:textfield; /* Firefox */
+}
+
+#yearInput {
+    min-width: 100px;
+}
+
+.error {
+    float: left;
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: hsl(0, 100%, 67%);
+}
+
+.separator {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 20px 0;
+}
+
+.separator hr {
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+#submit-btn {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+hr {
+    width: 100%;
+    display: inline-block;
+}
+
+button {
+    border-radius: 100%;
+    border: none;
+    padding: 20px;
+    background-color: hsl(259, 100%, 65%);
+}
+
+p.result {
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    color: hsl(0, 0%, 8%);
+    margin: 0;
+    line-height: 8rem;
+}
+
+span {
+    font-size: 7rem;
+    color: hsl(259, 100%, 65%);
+    text-align: left;
+}
+
+span + span {
+    color: black;
+}
+
+.attribution {
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1080px) {
+    span {
+        font-size: 4rem;
+    }
+
+    p.result {
+        line-height: 5rem;;
+    }
+
+    input {
+        font-size: 2rem;
+    }
+
+    #submit-btn {
+        right: 40%;
+    }
+
+    .separator {
+        margin: 50px 0 70px 0;
+    }
+
+    .separator img {
+        width: 40px;
+    }
+}
