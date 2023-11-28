@@ -224,23 +224,24 @@ button:hover {
         align-items: center;
         padding: 30px;
         padding-top: 6rem;
+        gap: 30px;
     }
 
     #success-img {
-        width: 65px;
+        width: 70px;
         align-self: baseline;
         margin-top: 2rem;
     }
 
     #success-title {
         width: 100%;
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 2.5rem;
         margin-bottom: 0;
     }
 
     #success-text {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     #dismiss-btn {
