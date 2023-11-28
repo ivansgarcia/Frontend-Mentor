@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+#main {
+    background-color: hsl(0, 0%, 100%);
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+    margin: 5%;
+    padding-right: 15px;
+    font-size: 0.9rem;
+}
+
+#img {
+    width: 42%;
+}
+
+#title {
+    color: hsl(234, 29%, 20%);
+    font-size: 3rem;
+    margin: 0;
+}
+
+#text {
+    margin: 15px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: flex;
+    gap: 10px;
+}
+
+ul li p {
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+#form-head {
+    width: 100%;
+}
+
+#error {
+    float: right;
+    color: tomato;
+}
+
+input {
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 0;
+    padding-left: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input.badMail {
+    background-color: rgb(255, 197, 187);
+    color: tomato;
+    border-color: tomato;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px 0px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, rgb(226, 73, 63), tomato);
+    box-shadow: 0 10px 20px 5px rgb(255, 42, 0, 0.3);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+#success-main {
+    width: 450px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+
+#success-title {
+    font-size: 3rem;
+    color: hsl(234, 29%, 20%);
+    line-height: 3rem;
+    margin: 0;
+    margin-top: 25px
+}
+
+#success-text {
+    line-height: 1.6rem;
+    padding: 0;
+}
+
+#span-email {
+    font-weight: bold;
+}
+
+#dismiss-btn {
+    padding: 23px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 850px) {
+
+    body {
+        justify-content: start;
+        height: 100%;
+    }
+
+    #main {
+        max-width: 400px;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: start;
+        gap: 20px;
+        align-items: center;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #img {
+        width: 100%;
+        content: url('/assets/images/illustration-sign-up-mobile.svg');
+        
+    }
+
+    #info {
+        padding-bottom: 50px;
+        gap: 20px;
+        font-size: 1.2rem;
+        margin: 0 20px;
+    }
+
+    #title {
+        font-size: 2.5rem;
+    }
+
+    #text {
+        margin: 8px;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    input {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    #submit {
+        margin-top: 20px;
+        padding: 20px 0;
+        font-size: 1.1rem;
+    }
+
+    #success-main {
+        height: 100vh;
+        width: 100%;
+        border-radius: 0;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        padding-top: 6rem;
+    }
+
+    #success-img {
+        width: 65px;
+        align-self: baseline;
+        margin-top: 2rem;
+    }
+
+    #success-title {
+        width: 100%;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    #success-text {
+        font-size: 1rem;
+    }
+
+    #dismiss-btn {
+        font-size: 1rem;
+        padding: 20px;
+        margin-top: auto;
+        margin-bottom: 40px;
+    }
+
+    .attribution {
+        color: black;
+        position: absolute;
+    }
+}
