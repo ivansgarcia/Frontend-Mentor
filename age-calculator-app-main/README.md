@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/age-calculator-app-cfi1LJpknT)
+- Live Site URL: [Add live site URL here](https://mellifluous-biscotti-d678e2.netlify.app/)
 
 ## My process
 
