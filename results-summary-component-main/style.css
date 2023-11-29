@@ -1,0 +1,218 @@
+@import url("results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  width: 600px;
+  height: 400px;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  box-shadow: 5px 10px 10px 10px rgba(120, 120, 120, 0.1);
+}
+
+.left-panel {
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.left-panel h4 {
+  font-size: 1.2rem;
+  color: silver;
+  font-weight: bold;
+}
+.left-panel .circle {
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 100%;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-panel .circle h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-top: 40px;
+}
+.left-panel .circle span {
+  position: relative;
+  top: -40px;
+  color: rgba(192, 192, 192, 0.692);
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.left-panel h2 {
+  color: white;
+}
+.left-panel .explain {
+  margin-top: -10px;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: silver;
+  padding: 0 50px;
+}
+
+.right-panel {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+}
+.right-panel h4 {
+  margin: 10px;
+  font-size: 1.2rem;
+  text-align: start;
+  padding-left: 30px;
+}
+.right-panel ul {
+  margin: 0;
+  list-style: none;
+  margin-left: -20px;
+  margin-right: 20px;
+  font-size: 0.9rem;
+}
+.right-panel ul li {
+  height: 20px;
+  padding: 10px 20px;
+  background-color: hsla(0, 100%, 67%, 0.05);
+  margin: 15px 10px;
+  position: relative;
+  border-radius: 10px;
+}
+.right-panel ul li .left {
+  position: absolute;
+  background: url("assets/images/icon-reaction.svg") no-repeat;
+  left: 10px;
+  padding-left: 25px;
+  color: hsla(0, 100%, 67%, 0.8);
+}
+.right-panel ul li .right {
+  float: right;
+  color: rgba(0, 0, 0, 0.388);
+}
+.right-panel ul li .right span {
+  color: black;
+}
+.right-panel ul li + li {
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+.right-panel ul li + li .left {
+  color: hsla(39, 100%, 56%, 0.8);
+  background: url("assets/images/icon-memory.svg") no-repeat;
+}
+.right-panel ul li + li + li {
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+.right-panel ul li + li + li .left {
+  color: hsla(166, 100%, 37%, 0.8);
+  background: url("assets/images/icon-verbal.svg") no-repeat;
+}
+.right-panel ul li + li + li + li {
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+.right-panel ul li + li + li + li .left {
+  color: hsla(234, 85%, 45%, 0.8);
+  background: url("assets/images/icon-visual.svg") no-repeat;
+}
+.right-panel button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px auto;
+  width: 80%;
+  padding: 15px 40px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all;
+}
+.right-panel button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 600px) {
+  body {
+    position: relative;
+    height: 100%;
+    background-color: white;
+    align-items: baseline;
+  }
+  .container {
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .container .left-panel, .container .right-panel {
+    width: 100%;
+    padding: 0;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .container .left-panel {
+    border-radius: 0 0 30px 30px;
+  }
+  .container .left-panel h4 {
+    font-size: 1.2rem;
+  }
+  .container .left-panel .circle {
+    width: 150px;
+    height: 150px;
+    margin-top: -10px;
+  }
+  .container .left-panel h2 {
+    font-size: 1.8rem;
+  }
+  .container .left-panel .explain {
+    font-size: 1rem;
+    width: 60%;
+    padding-bottom: 20px;
+  }
+  .container .right-panel {
+    padding: 20px 0;
+  }
+  .container .right-panel h4 {
+    font-size: 1.4rem;
+  }
+  .container .right-panel ul li {
+    font-size: 1rem;
+    padding: 20px;
+  }
+  .container .right-panel button {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
