@@ -26,7 +26,9 @@ The HTML shows a QR code with a text explain following the instructions given an
 
 ### Links
 
-- Solution URL: [https://main--polite-sprinkles-d69133.netlify.app/]
+- Solution URL: https://www.frontendmentor.io/solutions/qr-code-component-M9BhZKQOkJ
+- Live Site URL: https://polite-sprinkles-d69133.netlify.app/
+
 
 ## My process
 
