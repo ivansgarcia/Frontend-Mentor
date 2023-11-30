@@ -58,13 +58,13 @@ const onSubmit = () => {
         resultMonths.innerHTML = 0;
         resultDays.innerHTML = 0;
 
-        resultYears.style = `min-width: ${passedYears.toString().length * 9}%`;
-        resultMonths.style = `min-width: ${passedMonths.toString().length * 9}%`;
-        resultDays.style = `min-width: ${passedDays.toString().length * 9}%`;
+        resultYears.style = `min-width: ${passedYears.toString().length * 0.65}em; letter-spacing: normal`;
+        resultMonths.style = `min-width: ${passedMonths.toString().length * 0.65}em; letter-spacing: normal`;
+        resultDays.style = `min-width: ${passedDays.toString().length * 0.65}em; letter-spacing: normal`;
 
         const yearInterval = setInterval(() => increase(resultYears, passedYears, yearInterval), 5);
         const monthInterval = setInterval(() => increase(resultMonths, passedMonths, monthInterval), 50);
-        const dayInterval = setInterval(() => increase(resultDays, passedDays, dayInterval), 50);
+        const dayInterval = setInterval(() => increase(resultDays, passedDays, dayInterval), 25);
 
         const increase = (result, end,  interval) => {
             if (Number(result.innerHTML) === end) {

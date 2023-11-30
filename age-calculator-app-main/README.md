@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/age-calculator-app-cfi1LJpknT)
-- Live Site URL: [Add live site URL here](https://mellifluous-biscotti-d678e2.netlify.app/)
+- Solution URL: https://www.frontendmentor.io/solutions/age-calculator-app-cfi1LJpknT
+- Live Site URL: https://mellifluous-biscotti-d678e2.netlify.app/
 
 ## My process
 
@@ -49,11 +49,10 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 
 ### What I learned
 
-In this exercise I use responsive design in the css file, and some calculus in the javascript file.
+In this exercise I used responsive design in the css file, and some calculus in the javascript file.
 In the javascript file is calculated the difference of days, months and years between the given date and the actual date.
 Furthermore depending on the results to show, the JS file recalculates the style to be shown.
 I added a animation for the numbers of the result using the setInterval function.
