@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message-VtVZvFyNU6)
-- Live Site URL: [Add live site URL here](https://delicate-clafoutis-cd952b.netlify.app/)
+- Solution URL: https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message-VtVZvFyNU6
+- Live Site URL: https://delicate-clafoutis-cd952b.netlify.app/
 
 ## My process
 
