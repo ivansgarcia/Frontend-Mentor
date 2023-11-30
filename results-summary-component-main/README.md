@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/result-summary-component-UpXzbb5E3p](https://www.frontendmentor.io/solutions/result-summary-component-UpXzbb5E3p)
-- Live Site URL: [https://sweet-vacherin-d2b56e.netlify.app/](https://sweet-vacherin-d2b56e.netlify.app/)
+- Solution URL: https://www.frontendmentor.io/solutions/result-summary-component-UpXzbb5E3p
+- Live Site URL: https://sweet-vacherin-d2b56e.netlify.app/
 
 ## My process
 

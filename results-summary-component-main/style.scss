@@ -28,13 +28,13 @@ body {
 
 .container {
     width: 600px;
-    height: 400px;
+    height: 440px;
     background-color: hsl(0, 0%, 100%);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     border-radius: 30px;
-    box-shadow: 5px 10px 10px 10px rgba(120, 120, 120, 0.1);
+    box-shadow: 5px 5px 25px 0px hsl(241, 100%, 89%, 0.5);
 }
 
 .left-panel {
@@ -56,8 +56,8 @@ body {
     .circle {
         background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
         border-radius: 100%;
-        width: 160px;
-        height: 160px;
+        width: 170px;
+        height: 170px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -103,7 +103,7 @@ body {
     border-radius: 30px;
 
     h4 {
-        margin: 10px;
+        margin: 5px 10px;
         font-size: 1.2rem;
         text-align: start;
         padding-left: 30px;
@@ -117,27 +117,24 @@ body {
         font-size: 0.9rem;
 
         li {
-            height: 20px;
+            height: 25px;
             padding: 10px 20px;
             background-color: hsla(0, 100%, 67%, 0.05);
             margin: 15px 10px;
-            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             border-radius: 10px;
             .left {
-                position: absolute;
                 background: url("assets/images/icon-reaction.svg") no-repeat;
-                left: 10px;
                 padding-left: 25px;
                 color: hsla(0, 100%, 67%, 0.8);
             }
 
             .right {
-                float: right;
                 color: rgba(0, 0, 0, 0.388);
-                // font-weight: bold;
                 
                 span {
-                    // font-weight: bold;
                     color: black;
                 }
             }
@@ -215,22 +212,22 @@ body {
             border-radius: 0 0 30px 30px;
 
             h4 {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
 
             .circle {
-                width: 150px;
-                height: 150px;
+                width: 140px;
+                height: 140px;
                 margin-top: -10px;
             }
 
             h2 {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
             
             .explain {
                 font-size: 1rem;
-                width: 60%;
+                width: 70%;
                 padding-bottom: 20px;
             }
         }
@@ -238,12 +235,12 @@ body {
         .right-panel {
             padding: 20px 0;
             h4 {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
             }
 
             ul li {
                 font-size: 1rem;
-                padding: 20px;
+                padding: 15px;
             }
 
             button {
@@ -251,5 +248,9 @@ body {
                 padding: 20px;
             }
         }
+    }
+
+    .attribution {
+        font-size: 0.6rem;
     }
 }
