@@ -17,12 +17,12 @@ body {
 
 .attribution {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
 }
 
 .container {
-  width: 600px;
-  height: 440px;
+  width: 750px;
+  height: 520px;
   background-color: hsl(0, 0%, 100%);
   text-align: center;
   display: flex;
@@ -37,42 +37,45 @@ body {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border-radius: 30px;
 }
 .left-panel h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: silver;
   font-weight: bold;
+  margin: 0;
 }
 .left-panel .circle {
   background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
   border-radius: 100%;
-  width: 170px;
-  height: 170px;
+  width: 200px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .left-panel .circle h1 {
-  font-size: 3.5rem;
+  font-size: 4.2rem;
   color: white;
   margin-top: 40px;
 }
 .left-panel .circle span {
   position: relative;
-  top: -40px;
+  top: -45px;
   color: rgba(192, 192, 192, 0.692);
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: normal;
 }
 .left-panel h2 {
   color: white;
+  font-size: 2rem;
+  margin-top: -5px;
 }
 .left-panel .explain {
-  margin-top: -10px;
-  font-size: 0.9rem;
+  margin-top: -40px;
+  font-size: 1.1rem;
   font-weight: normal;
   color: silver;
   padding: 0 50px;
@@ -89,8 +92,8 @@ body {
   border-radius: 30px;
 }
 .right-panel h4 {
-  margin: 5px 10px;
-  font-size: 1.2rem;
+  margin: 15px 10px;
+  font-size: 1.5rem;
   text-align: start;
   padding-left: 30px;
 }
@@ -99,11 +102,11 @@ body {
   list-style: none;
   margin-left: -20px;
   margin-right: 20px;
-  font-size: 0.9rem;
+  font-size: 1.15rem;
 }
 .right-panel ul li {
   height: 25px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-color: hsla(0, 100%, 67%, 0.05);
   margin: 15px 10px;
   display: flex;
@@ -144,12 +147,12 @@ body {
   background: url("assets/images/icon-visual.svg") no-repeat;
 }
 .right-panel button {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 500;
   text-align: center;
-  margin: 10px auto;
+  margin: 25px auto 25px;
   width: 80%;
-  padding: 15px 40px;
+  padding: 17px 40px;
   background-color: hsl(224, 30%, 27%);
   color: white;
   border: none;
@@ -176,27 +179,35 @@ body {
   .container .left-panel, .container .right-panel {
     width: 100%;
     padding: 0;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 0;
   }
   .container .left-panel {
     border-radius: 0 0 30px 30px;
+    gap: 30px;
   }
   .container .left-panel h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin-top: 30px;
   }
   .container .left-panel .circle {
     width: 140px;
     height: 140px;
     margin-top: -10px;
   }
+  .container .left-panel .circle h1 {
+    font-size: 3.5rem;
+  }
+  .container .left-panel .circle span {
+    font-size: 1rem;
+  }
   .container .left-panel h2 {
     font-size: 1.5rem;
   }
   .container .left-panel .explain {
     font-size: 1rem;
-    width: 70%;
-    padding-bottom: 20px;
+    width: 60%;
+    padding-bottom: 25px;
   }
   .container .right-panel {
     padding: 20px 0;
