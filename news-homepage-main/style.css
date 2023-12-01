@@ -1,0 +1,301 @@
+@font-face {
+    font-family: Inter-VariableFont;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter-VariableFont, sans-serif;
+    margin: 0;
+}
+
+#shadow {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(53, 53, 53, 0.672);
+}
+
+.container {
+    width: 90%;
+    max-width: 1125px;
+    margin:auto;
+    padding-top: 80px;
+}
+
+header nav {
+    height: fit-content;
+    float: right;
+    height: 100%;
+    margin: 10px 0px;
+}
+
+header a {
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 40px;
+    font-weight: 400;
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+}
+
+header a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+header #menu {
+    display: none;
+    background-color: white;
+    padding: 10px 40px;
+    padding-top: 90px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+header #menu ul {
+    display: none;
+    float: left;
+    margin: 80px 0;
+    margin-left: -20px;
+    list-style-position: initial;
+    padding: 0;
+    transition: 0.3s;
+}
+
+header #menu img {
+    position: absolute;
+    right: 40px;
+    margin-top: 10px;
+    margin-right: 0;
+    width: 40px;
+    cursor: pointer;
+}
+
+header #menu ul a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: block;
+    color: black;
+}
+
+header #menu ul a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section {
+    width: 67%;
+}
+
+main section img {
+    width: 100%;
+}
+
+main section h1 {
+    font-size: 3.4rem;
+    font-weight: 800;
+    width: 45%;
+    height: 100%;
+    float: left;
+    margin-top: 25px;
+    line-height: 3.4rem;
+}
+
+main section article {
+    font-size: 1rem;
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 10px;
+    color: hsl(236, 13%, 42%);
+}
+
+main section article button {
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    background-color: hsl(5, 85%, 63%);
+    padding: 15px 30px;
+    margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+main section article button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+aside {
+    width: 26%;
+    background-color: hsl(240, 100%, 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1% 2% 0;
+}
+
+aside h2 {
+    font-size: 2.5rem;
+    color: hsl(35, 77%, 62%);
+    margin: 0;
+}
+
+aside div h5 {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 ;
+    cursor: pointer;
+}
+
+aside div h5:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+aside div p {
+    font-size: 1rem;
+    color: hsl(233, 4%, 65%);
+}
+
+hr {
+    width: 100%;
+    border-top: 1px;
+    border-color: hsl(233, 4%, 65%);
+    margin: 8px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+footer div {
+    float: left;
+    width: 30%;
+    padding: 1%;
+    margin-top: 40px;
+}
+
+footer div img {
+    width: 30%;
+    float: left;
+    margin: 1%;
+    margin-right: 5%;
+}
+
+footer div h3 {
+    color: hsl(233, 8%, 79%);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+footer div h4 {
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+footer div h4:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+footer div p {
+    color: hsl(236, 13%, 42%);
+}
+
+.attribution {
+    margin-top: 30px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 750px) {
+
+    .container {
+        max-width: 500px;
+        padding-top: 30px;
+    }
+
+    header img {
+        width: 50px;
+    }
+
+    header nav a {
+        display: none;
+    }
+
+    header #menu {
+        display: initial;
+        padding-top: 40px;
+    }
+
+    header #menu ul a {
+        padding: 15px 10px;
+        font-weight: semibold;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main section, main aside, main section h1, main section article, footer div {
+        width: 100%;
+    }
+
+    main section {
+        margin: 0 auto;
+    }
+
+    main section article {
+        margin: 0;
+    }
+
+    main section img {
+        content: url(./assets/images/image-web-3-mobile.jpg);
+    }
+
+    main section h1 {
+        font-size: 2.5rem;
+        width: 85%;
+        line-height: 2.6rem;
+        margin-bottom: 0;
+    }
+
+    main aside {
+        margin: 40px 0;
+        padding: 0;
+    }
+
+    main aside h2 {
+        font-size: 2rem;
+        margin: 20px;
+    }
+
+    main aside div {
+        margin: 20px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer div {
+        margin: 15px auto;
+        padding: 0;
+    }
+}
