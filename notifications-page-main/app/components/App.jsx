@@ -1,8 +1,9 @@
-import Notification from '@/components/Notification';
+"use client"; 
+import Notification from './Notification';
 import '../styles/App.scss';
-import React from 'react';
 import notifications from '../notifications';
-import '../../src/styles/Notification.scss';
+import '../styles/Notification.scss';
+import React from "react";
 
 export default function App() {
     const [notificationList, setNotificationList] =
