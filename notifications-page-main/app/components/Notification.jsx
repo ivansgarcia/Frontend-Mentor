@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import '../styles/notification.scss'
 
 const Notification = ({ props, decreaseNotifications }) => {
     let { avatar, name, target, action, message, readed, date } = props;
