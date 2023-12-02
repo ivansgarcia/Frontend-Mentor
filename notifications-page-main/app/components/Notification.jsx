@@ -39,8 +39,14 @@ const Notification = ({ props, decreaseNotifications }) => {
             <div className="info">
                 <span className="name">{name}</span>
                 <span className="action"> {action} </span>
-                <span className={`target-name ${target.group && 'group'}`}> {target.name} </span>
+                <span className={`target-name ${target.group && 'group'}`}>
+                    {' '}
+                    {target.name}{' '}
+                </span>
                 {!isReaded && <span className="dot"></span>}
+                <p className="date">{date}</p>
+                {message && <p className="message">{message}</p>}
+            </div>
                 {target.picture && (
                     <Image
                         className="target-picture"
@@ -50,9 +56,6 @@ const Notification = ({ props, decreaseNotifications }) => {
                         height={40}
                     />
                 )}
-            <p className="date">{date}</p>
-            {message && <p className="message">{message}</p>}
-            </div>
         </li>
     );
 };

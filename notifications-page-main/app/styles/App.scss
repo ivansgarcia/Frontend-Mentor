@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 @import './colors';
-
 
 body {
     background-color: $very-light-grayish-blue;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500;
+    margin: 0;
 }
 
 .App {
     font-size: 1.2rem;
     max-width: 600px;
     background-color: $white;
-    margin: 50px auto;
-    padding: 30px;
+    margin: 53px auto;
+    padding: 30px 30px 0;
+    border-radius: 15px;
 
     header {
         display: flex;
@@ -23,6 +21,7 @@ body {
 
         .title {
             margin: 0;
+            font-size: 1.4rem;
         }
     
         .notification-count {
@@ -58,4 +57,16 @@ body {
 .attribution {
     font-size: 0.7rem;
     text-align: center;
+}
+
+@media (max-width: '600px') {
+    body {
+        background-color: white;
+    };
+
+    .App {
+        margin: 0;
+        border-radius: 0;
+        padding-bottom: 30px;
+    }
 }

@@ -4,6 +4,12 @@ import '../styles/App.scss';
 import notifications from '../notifications';
 import '../styles/Notification.scss';
 import React from "react";
+import { Plus_Jakarta_Sans } from 'next/font/google';
+
+const jakarta = Plus_Jakarta_Sans({
+    weight: ['500', '800'],
+    subsets: ['latin'],
+})
 
 export default function App() {
     const [notificationList, setNotificationList] =
@@ -28,7 +34,7 @@ export default function App() {
 
     return (
         <>
-            <div className="App">
+            <div className={`App ${jakarta.className}`}>
                 <header>
                     <h3 className="title">Notifications</h3>
                     <span className="notification-count">
