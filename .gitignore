@@ -1,0 +1,14 @@
+*/.vscode/settings.json
+
+# Projects
+/my-app/
+/advice-generator-app/
+/data-notifications-page-main/      
+/expenses-chart-component-main/     
+/interactive-card-details-form-main/
+/interactive-comments-section-main/
+/interactive-rating-component/
+/intro-section-with-dropdown-navigation/
+/multi-step-form-main/
+/nft-preview-card-component-main/
+/product-preview-card-component-main/
