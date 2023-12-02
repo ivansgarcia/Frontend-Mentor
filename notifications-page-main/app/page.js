@@ -1,5 +1,5 @@
 import App from "./components/App";
-import './styles/App.scss'
+import './styles/global.scss'
 
 export default function Home() {
   return (

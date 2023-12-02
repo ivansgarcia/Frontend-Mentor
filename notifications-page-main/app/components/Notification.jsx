@@ -1,22 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
-import PropTypes from 'prop-types';
+import '../styles/notification.scss'
 
 const Notification = ({ props, decreaseNotifications }) => {
     let { avatar, name, target, action, message, readed, date } = props;
 
-    // const [notifi, setNotifi] = React.useState(props);
     const [isReaded, setIsReaded] = React.useState(readed);
 
-    // console.log(target.picture);
-    // console.log(target.group);
-
-    React.useEffect(() => {
-        setIsReaded(readed);
-    }, [readed]);
-
     const setReaded = () => {
-        if (!readed) {
+        if (!isReaded) {
             setIsReaded(true);
             decreaseNotifications();
         }

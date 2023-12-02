@@ -1,8 +1,6 @@
 "use client"; 
 import Notification from './Notification';
-import '../styles/App.scss';
 import notifications from '../notifications';
-import '../styles/Notification.scss';
 import React from "react";
 import { Plus_Jakarta_Sans } from 'next/font/google';
 
