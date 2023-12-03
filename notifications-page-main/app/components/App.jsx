@@ -20,7 +20,6 @@ export default function App() {
         let newNotificationList = [...notificationList];
         newNotificationList.forEach((x) => (x.readed = true));
         setNotificationList([...newNotificationList]);
-        console.log(newNotificationList);
         setNewNotifications(0);
     };
 
@@ -46,22 +45,13 @@ export default function App() {
                 <ul>
                     {notificationList.map((notification, index) => (
                         <Notification
-                            key={notificationList.indexOf(notification)}
+                            key={index}
                             props={notification}
+                            readed = {notification.readed}
                             decreaseNotifications={decreaseNotifications}
                         />
                     ))}
                 </ul>
-            </div>
-            <div className="attribution">
-                Challenge by{' '}
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                >
-                    Frontend Mentor
-                </a>
-                . Coded by <a href="#">Your Name Here</a>.
             </div>
         </>
     );

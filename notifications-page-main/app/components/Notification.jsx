@@ -6,7 +6,12 @@ const Notification = ({ props, decreaseNotifications }) => {
 
     const [isReaded, setIsReaded] = React.useState(readed);
 
+    React.useEffect(() => {
+        setIsReaded(readed);
+    }, [readed]);
+
     const setReaded = () => {
+        console.log(isReaded);
         if (!isReaded) {
             setIsReaded(true);
             decreaseNotifications();
