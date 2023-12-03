@@ -11,7 +11,6 @@ const Notification = ({ props, decreaseNotifications }) => {
     }, [readed]);
 
     const setReaded = () => {
-        console.log(isReaded);
         if (!isReaded) {
             setIsReaded(true);
             decreaseNotifications();
@@ -28,8 +27,8 @@ const Notification = ({ props, decreaseNotifications }) => {
                     className="avatar"
                     src={avatar}
                     alt="avatar"
-                    width={40}
-                    height={40}
+                    width={45}
+                    height={45}
                 />
             </figure>
             <div className="info">
@@ -48,8 +47,8 @@ const Notification = ({ props, decreaseNotifications }) => {
                         className="target-picture"
                         src={target.picture}
                         alt="target image"
-                        width={40}
-                        height={40}
+                        width={45}
+                        height={45}
                     />
                 )}
         </li>

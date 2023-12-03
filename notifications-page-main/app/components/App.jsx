@@ -10,8 +10,10 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export default function App() {
+
     const [notificationList, setNotificationList] =
         React.useState(notifications);
+
     const [newNotifications, setNewNotifications] = React.useState(
         notificationList.filter((x) => !x.readed).length
     );
@@ -37,7 +39,7 @@ export default function App() {
                     <span className="notification-count">
                         {newNotifications}
                     </span>
-                    <button id="all-read" onClick={() => setAllRead()}>
+                    <button id="all-read" onClick={setAllRead}>
                         Mark all as read
                     </button>
                 </header>

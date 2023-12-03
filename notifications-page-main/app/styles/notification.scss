@@ -2,13 +2,12 @@
 
 li.notification {
     margin: 0;
-    font-size: 0.9rem;
     font-weight: 500;
     border-radius: 10px;
     padding: 5px;
     padding-right: 15px;
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     align-items: flex-start;
     align-items: center;
 
@@ -74,7 +73,6 @@ li.notification {
     }
 
     .date {
-        font-size: 0.9rem;
         margin: 2px 0 0;
         color: $light-grayish-blue-2;
     }
@@ -84,8 +82,7 @@ li.notification {
         border: 1px solid $light-grayish-blue-1;
         border-radius: 5px;
         padding: 15px;
-        font-size: 0.9rem;
-        margin: 10px 0 0;
+        margin: 10px 0 5px;
         color: $dark-grayish-blue;
 
         &:hover {
