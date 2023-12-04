@@ -1,26 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Notification = ({ props, decreaseNotifications }) => {
-    let { avatar, name, target, action, message, readed, date } = props;
+const Notification = ({ notification, setReaded }) => {
 
-    const [isReaded, setIsReaded] = React.useState(readed);
-
-    React.useEffect(() => {
-        setIsReaded(readed);
-    }, [readed]);
-
-    const setReaded = () => {
-        if (!isReaded) {
-            setIsReaded(true);
-            decreaseNotifications();
-        }
-    };
+    const { avatar, name, target, action, message, readed, date } = notification;
 
     return (
         <li
-            className={`notification ${!isReaded && 'new'}`}
-            onClick={() => setReaded()}
+            className={`notification ${!readed && 'new'}`}
+            onClick={() => setReaded(notification)}
         >
             <figure>
                 <Image
@@ -38,7 +26,7 @@ const Notification = ({ props, decreaseNotifications }) => {
                     {' '}
                     {target.name}{' '}
                 </span>
-                {!isReaded && <span className="dot"></span>}
+                {!readed && <span className="dot"></span>}
                 <p className="date">{date}</p>
                 {message && <p className="message">{message}</p>}
             </div>

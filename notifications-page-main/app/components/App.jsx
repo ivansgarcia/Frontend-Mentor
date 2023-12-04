@@ -31,6 +31,16 @@ export default function App() {
         setNewNotifications(newNots);
     };
 
+    const setReaded = (notification) => {
+        if (!notification.readed) {
+            const index = notificationList.indexOf(notification);
+            const tmpNotificationList = [...notificationList];
+            tmpNotificationList[index].readed = true;
+            setNotificationList(tmpNotificationList);
+            decreaseNotifications();
+        }
+    };
+
     return (
         <>
             <div className={`App ${jakarta.className}`}>
@@ -48,9 +58,8 @@ export default function App() {
                     {notificationList.map((notification, index) => (
                         <Notification
                             key={index}
-                            props={notification}
-                            readed = {notification.readed}
-                            decreaseNotifications={decreaseNotifications}
+                            setReaded = {setReaded}
+                            notification={notification}
                         />
                     ))}
                 </ul>
