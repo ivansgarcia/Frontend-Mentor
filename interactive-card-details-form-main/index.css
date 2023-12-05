@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  min-height: 600px;
+}
+.container #left-panel {
+  width: 35%;
+  height: 100%;
+  background-image: url("/images/bg-main-desktop.png");
+  background-size: cover;
+  overflow: visible;
+}
+.container #left-panel .card1 {
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  background: url("/images/bg-card-front.png") no-repeat;
+  background-size: contain;
+  margin-left: 45%;
+  margin-top: 190px;
+  padding: 30px;
+  border-radius: 10px;
+}
+.container #left-panel .card1 #card1-logo {
+  width: 80px;
+}
+.container #left-panel .card1 #card1-number {
+  font-size: 1.8rem;
+  color: white;
+  letter-spacing: 3px;
+  width: 100%;
+  margin-top: 60px;
+}
+.container #left-panel .card1 #card1-info {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+.container #left-panel .card1 #card1-info #card1-name {
+  text-transform: uppercase;
+}
+.container #left-panel .card1 #card1-info #card1-date {
+  display: inline-block;
+}
+.container #left-panel .card1 #card1-info #card1-date #card1-year {
+  margin-left: 0;
+}
+.container #left-panel .card2 {
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  background: url("/images/bg-card-back.png") no-repeat;
+  background-size: contain;
+  margin-left: 65%;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.container #left-panel .card2 .card2-info {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-top: 88px;
+  text-align: end;
+  margin-right: 30px;
+  color: white;
+}
+.container #right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  height: 100%;
+}
+.container #right-panel form {
+  margin-left: 360px;
+  width: 380px;
+  box-sizing: border-box;
+}
+.container #right-panel form label, .container #right-panel form span {
+  color: hsl(279, 68%, 19%);
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 11px;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.container #right-panel form input {
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+.container #right-panel form input::placeholder {
+  color: silver;
+}
+.container #right-panel form input:focus {
+  border: 1px solid purple;
+  outline: none;
+}
+.container #right-panel form input:hover {
+  cursor: pointer;
+}
+.container #right-panel form #card-info {
+  white-space: nowrap;
+  display: flex;
+}
+.container #right-panel form #card-info .card-date {
+  width: 50%;
+  border: none;
+  margin: 0;
+}
+.container #right-panel form #card-info .card-date span, .container #right-panel form #card-info .card-date label {
+  width: 100%;
+  display: block;
+}
+.container #right-panel form #card-info .card-date input[type=number] {
+  display: inline-block;
+  width: 40%;
+  margin-right: 5px;
+}
+.container #right-panel form #card-info .card-date input[type=number]#cvc {
+  width: 100%;
+}
+.container #right-panel form #card-info .card-data + .card-data {
+  margin-left: 25px;
+  width: 35%;
+}
+.container #right-panel form #card-info .clear {
+  clear: both;
+}
+.container #right-panel form #card-info label {
+  display: inline-block;
+  width: 40%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.container #right-panel form .error {
+  display: block;
+  margin-top: 10px;
+  color: rgb(199, 1, 51);
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: normal;
+}
+.container .confirm-btn {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1rem;
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+}
+.container #complete {
+  text-align: center;
+  display: none;
+  width: 385px;
+  margin-left: 360px;
+}
+.container #complete .complete-title {
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  color: hsl(278, 68%, 11%);
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 30px;
+}
+.container #complete .complete-text {
+  color: hsl(279, 6%, 55%);
+}
+.container #complete .confirm-btn {
+  margin-top: 40px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1150px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container #left-panel {
+    background-image: url(/images/bg-main-mobile.png);
+    width: 100%;
+    height: 250px;
+    position: relative;
+    text-align: center;
+  }
+  .container #left-panel .card1, .container #left-panel .card2 {
+    text-align: start;
+    margin: 10px;
+    position: absolute;
+    width: 275px;
+    height: 172px;
+    padding: 18px;
+  }
+  .container #left-panel .card1 {
+    transform: translate(-63%, 58%);
+    z-index: 10;
+  }
+  .container #left-panel .card1 #card1-logo {
+    width: 55px;
+  }
+  .container #left-panel .card1 #card1-number {
+    margin-top: 40px;
+    font-size: 1.1rem;
+  }
+  .container #left-panel .card1 #card1-info {
+    margin-top: 5%;
+    font-size: 0.6rem;
+  }
+  .container #left-panel .card2 {
+    transform: translate(-45%, 12%);
+  }
+  .container #left-panel .card2 .card2-info {
+    margin-top: 58px;
+    margin-right: 20px;
+    font-size: 0.7rem;
+  }
+  .container #right-panel {
+    width: 85%;
+    max-width: 400px;
+    align-items: center;
+  }
+  .container #right-panel form {
+    margin: 0;
+    width: 100%;
+    padding-top: 80px;
+  }
+  .container #right-panel form label, .container #right-panel form input, .container #right-panel form span {
+    font-size: 0.85rem;
+  }
+  .container #right-panel form input {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+  .container #right-panel form .confirm-btn {
+    font-size: 1.3rem;
+    padding: 18px;
+  }
+  .container #right-panel #complete {
+    margin: 0;
+    margin-top: 110px;
+  }
+  .container #right-panel #complete img {
+    width: 90px;
+  }
+  .container #right-panel #complete .complete-title {
+    font-size: 2rem;
+  }
+  .container #right-panel #complete .complete-text {
+    font-size: 1.2rem;
+  }
+  .container #right-panel #complete .confirm-btn {
+    font-size: 1.2rem;
+    width: 350px;
+    margin: 50px auto 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
