@@ -21,6 +21,7 @@ body {
         background-image: url('/images/bg-main-desktop.png');
         background-size: cover;
         overflow: visible;
+        cursor: default;
 
         .card1 {
             display: inline-block;
@@ -79,29 +80,30 @@ body {
             border-radius: 10px;
 
             .card2-info {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 letter-spacing: 2px;
-                margin-top: 88px;
+                margin-top: 87px;
                 text-align: end;
                 margin-right: 30px;
                 color: white;
             }
         }
     }
-    
+
     #right-panel {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 65%;
         height: 100%;
-    
+
         form {
             margin-left: 360px;
             width: 380px;
             box-sizing: border-box;
-    
-            label, span {
+
+            label,
+            span {
                 color: hsl(279, 68%, 19%);
                 font-size: 0.7rem;
                 font-weight: bold;
@@ -110,6 +112,16 @@ body {
                 display: block;
                 text-transform: uppercase;
                 margin-top: 20px;
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            input[type=number]{
+                -moz-appearance: textfield;
             }
 
             input {
@@ -136,7 +148,6 @@ body {
                 }
             }
 
-
             #card-info {
                 white-space: nowrap;
                 display: flex;
@@ -145,13 +156,14 @@ body {
                     width: 50%;
                     border: none;
                     margin: 0;
-    
-                    span, label {
+
+                    span,
+                    label {
                         width: 100%;
                         display: block;
                     }
-        
-                    input[type=number] {
+
+                    input[type='number'] {
                         display: inline-block;
                         width: 40%;
                         margin-right: 5px;
@@ -161,7 +173,7 @@ body {
                     }
                 }
 
-                .card-data+.card-data {
+                .card-data + .card-data {
                     margin-left: 25px;
                     width: 35%;
                 }
@@ -188,7 +200,6 @@ body {
                 text-transform: none;
                 font-weight: normal;
             }
-
         }
     }
     .confirm-btn {
@@ -196,14 +207,16 @@ body {
         font-size: 1.1rem;
         display: block;
         margin-top: 30px;
+        margin-bottom: 20px;
         width: 100%;
         padding: 15px;
         border: none;
         border-radius: 10px;
         background-color: hsl(278, 68%, 11%);
         color: white;
+        cursor: pointer;
     }
-    
+
     #complete {
         text-align: center;
         display: none;
@@ -229,27 +242,27 @@ body {
     }
 }
 
-
-
-.attribution { 
-    font-size: 11px; text-align: center;
+.attribution {
+    font-size: 11px;
+    text-align: center;
     margin-top: -30px;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
 }
 
 @media (max-width: 1150px) {
-
     body {
         width: 100%;
         height: 100%;
+        min-width: 320px;
     }
-    
+
     .container {
         width: 100%;
         flex-direction: column;
         align-items: center;
+        overflow-x: hidden;
 
         #left-panel {
             background-image: url(/images/bg-main-mobile.png);
@@ -258,17 +271,18 @@ body {
             position: relative;
             text-align: center;
 
-            .card1, .card2 {
+            .card1,
+            .card2 {
                 text-align: start;
                 margin: 10px;
                 position: absolute;
-                width: 275px;
-                height: 172px;
+                width: 250px;
+                height: 125px;
                 padding: 18px;
             }
 
             .card1 {
-                transform: translate(-63%, 58%);
+                transform: translate(-63%, 67%);
                 z-index: 10;
 
                 #card1-logo {
@@ -276,8 +290,8 @@ body {
                 }
 
                 #card1-number {
-                    margin-top: 40px;
-                    font-size: 1.1rem;
+                    margin-top: 35px;
+                    font-size: 1.05rem;
                 }
 
                 #card1-info {
@@ -290,9 +304,9 @@ body {
                 transform: translate(-45%, 12%);
 
                 .card2-info {
-                    margin-top: 58px;
-                    margin-right: 20px;
-                    font-size: 0.7rem;
+                    margin-top: 54px;
+                    margin-right: 15px;
+                    font-size: 0.6rem;
                 }
             }
         }
@@ -305,15 +319,17 @@ body {
             form {
                 margin: 0;
                 width: 100%;
-                padding-top: 80px;
+                padding-top: 60px;
 
-                label, input, span {
-                    font-size: 0.85rem;
+                label,
+                input,
+                span {
+                    font-size: 0.75rem;
                 }
 
                 input {
                     padding: 15px;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                 }
 
                 .confirm-btn {
@@ -324,7 +340,8 @@ body {
 
             #complete {
                 margin: 0;
-                margin-top: 110px;
+                margin-top: 80px;
+                width: 90%;
 
                 img {
                     width: 90px;
@@ -340,7 +357,7 @@ body {
 
                 .confirm-btn {
                     font-size: 1.2rem;
-                    width: 350px;
+                    width: 100%;
                     margin: 50px auto 0;
                 }
             }
