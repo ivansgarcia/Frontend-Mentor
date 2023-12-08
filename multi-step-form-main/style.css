@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  transform: scale(0.6);
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: hsl(213, 96%, 18%);
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+  content: "";
+}
+
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 32px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+#tag1 {
+  display: inline-block;
+}
+#tag1 form {
+  padding: 30px 0;
+}
+#tag1 form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 10px 0;
+  color: hsl(213, 96%, 18%);
+}
+#tag1 form span {
+  display: none;
+  font-weight: 700;
+  color: hsl(354, 84%, 57%);
+  float: right;
+  margin-right: 0px;
+  font-size: 0.9rem;
+}
+#tag1 form input {
+  box-sizing: border-box;
+  cursor: pointer;
+  color: hsl(213, 96%, 18%);
+  margin: 10px 0;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid hsl(229, 24%, 87%);
+  outline: none;
+}
+#tag1 form input:focus {
+  border-color: hsl(243, 100%, 62%);
+}
+#tag1 form input.checked {
+  background-color: hsl(217, 100%, 97%);
+  border-color: hsl(243, 100%, 62%);
+}
+#tag1 form input::placeholder {
+  color: silver;
+}
+
+#tag2 #options {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+#tag2 #options .plan-option {
+  cursor: pointer;
+  width: 110px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+#tag2 #options .plan-option p {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  font-size: 1rem;
+}
+#tag2 #options .plan-option span.price {
+  font-size: 1rem;
+  color: hsl(231, 11%, 63%);
+}
+#tag2 #options .plan-option p.discount {
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 10px 0 0;
+}
+#tag2 #options .plan-option.selected {
+  border-color: hsl(243, 100%, 62%);
+  background-color: hsl(231, 100%, 99%);
+}
+#tag2 #options .plan-option:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+#tag2 #radio-option {
+  background-color: hsl(231, 100%, 99%);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+#tag2 #radio-option span {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+  display: inline-block;
+}
+
+#tag3 #add-ons-options {
+  margin-top: 50px;
+  margin-bottom: -40px;
+  width: 100%;
+}
+#tag3 #add-ons-options .add-ons-option {
+  cursor: pointer;
+  margin: 15px 0;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#tag3 #add-ons-options .add-ons-option .checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 5px;
+}
+#tag3 #add-ons-options .add-ons-option .checkbox.selected {
+  background: url("./assets/images/icon-checkmark.svg") hsl(243, 100%, 62%) no-repeat;
+  background-position: center;
+}
+#tag3 #add-ons-options .add-ons-option .add-on-info {
+  display: inline-block;
+  flex: 1;
+  padding-left: 20px;
+}
+#tag3 #add-ons-options .add-ons-option .add-on-info p {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+#tag3 #add-ons-options .add-ons-option .add-on-info p + p {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: -5px;
+}
+#tag3 #add-ons-options .add-ons-option .price-plus {
+  color: hsl(243, 100%, 62%);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+#tag3 #add-ons-options .add-ons-option:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+#tag3 #add-ons-options .add-ons-option.selected {
+  background-color: hsl(217, 100%, 97%);
+}
+#tag3 #add-ons-options .add-ons-option.selected {
+  border-color: hsl(243, 100%, 62%);
+  background-color: hsl(231, 100%, 99%);
+}
+
+#tag4 {
+  font-size: 0.9rem;
+}
+#tag4 #result {
+  list-style: none;
+  background-color: hsl(231, 100%, 99%);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+#tag4 #result #active-plan {
+  width: 60%;
+  display: inline-block;
+}
+#tag4 #result #active-plan #result-plan {
+  font-size: 1.1rem;
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+#tag4 #result #result-price {
+  float: right;
+  padding: 20px 0;
+  font-size: 1rem;
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+#tag4 #result a {
+  margin-top: -20px;
+  color: hsl(231, 11%, 63%);
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+#tag4 #result hr {
+  margin: 20px 0;
+  border: 1px solid hsl(229, 24%, 87%);
+}
+#tag4 #result .result-addOn {
+  color: hsl(231, 11%, 63%);
+  padding: 10px 0;
+}
+#tag4 #result .result-addOn span + span {
+  float: right;
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+#tag4 #total {
+  padding: 10px 20px;
+}
+#tag4 #total span {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.9rem;
+}
+#tag4 #total span + span {
+  float: right;
+  color: hsl(243, 100%, 62%);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#tag5 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+#tag5 h1 {
+  color: hsl(213, 96%, 18%);
+  margin-top: 30px;
+  font-size: 2rem;
+}
+#tag5 p {
+  margin-top: 0;
+  font-size: 1.04rem;
+  color: hsl(231, 11%, 63%);
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  background-color: hsl(217, 100%, 97%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button.next {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: hsl(213, 96%, 18%);
+  padding: 15px 30px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  border: none;
+}
+button.next:hover {
+  background-color: hsl(213, 96%, 18%);
+}
+
+.tag-changer.outside {
+  display: none;
+  max-width: 700px;
+  width: 90%;
+  padding: 20px 0;
+}
+.tag-changer.outside button.confirm-btn {
+  display: none;
+}
+.tag-changer.outside button.next {
+  margin-left: auto;
+}
+.tag-changer.outside button.back {
+  display: none;
+}
+.tag-changer.inside {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.tag-changer.inside .next {
+  margin-left: auto;
+}
+
+button.back {
+  cursor: pointer;
+  bottom: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 15px 30px;
+  color: hsl(231, 11%, 63%);
+  border-radius: 8px;
+  border: none;
+  background: none;
+}
+button.back:hover {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+
+.container {
+  width: 910px;
+  min-width: 700px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.container .nav {
+  display: inline-block;
+  width: 30%;
+  height: 548px;
+  border-radius: 10px;
+  background-image: url("./assets/images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+.container .nav .nav-item {
+  padding: 2px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.container .nav .nav-item .nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 100%;
+  border: 1px solid hsl(0, 0%, 100%);
+  color: white;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  font-weight: 700;
+}
+.container .nav .nav-item .nav-btn.active {
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+  cursor: initial;
+}
+.container .nav .nav-item .item-info {
+  padding: 10px;
+}
+.container .nav .nav-item .item-info h3 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: hsl(231, 11%, 63%);
+  margin: 5px;
+}
+.container .nav .nav-item .item-info p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  margin: 5px;
+}
+.container .nav.enabled .nav-item .nav-btn:hover {
+  cursor: pointer;
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+.container .tag {
+  position: relative;
+  margin: auto;
+  display: none;
+  width: 52%;
+  height: 100%;
+}
+.container .tag h2 {
+  font-size: 2rem;
+  color: hsl(213, 96%, 18%);
+  margin: 0;
+  margin-top: 40px;
+}
+.container .tag p {
+  color: hsl(231, 11%, 63%);
+  font-size: 1.04rem;
+  margin: 10px 0;
+}
+
+button.next.confirm-btn {
+  background-color: hsl(243, 100%, 62%);
+  padding: 15px 35px;
+}
+button.next.confirm-btn:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 956px) {
+  body {
+    margin: 0;
+    background-color: white;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+  .tag-changer {
+    width: 100%;
+  }
+  .tag-changer.outside {
+    display: flex;
+  }
+  .tag-changer.outside button {
+    position: initial;
+  }
+  .tag-changer.inside {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    max-width: 700px;
+    min-width: 0;
+    min-height: 600px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    padding-top: 0;
+    flex-direction: column;
+    background-color: hsl(217, 100%, 97%);
+    justify-content: flex-start;
+  }
+  .container .nav {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-image: url("./assets/images/bg-sidebar-mobile.svg");
+    background-size: cover;
+    border-radius: 0;
+  }
+  .container .nav .nav-item {
+    margin-top: 10px;
+  }
+  .container .nav .nav-item .nav-btn {
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+  }
+  .container .nav .nav-item .item-info {
+    display: none;
+  }
+  .container .tag {
+    box-sizing: border-box;
+    width: 90%;
+    position: initial;
+    margin: 0 auto;
+    margin-top: -90px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: fit-content;
+    border-radius: 10px;
+  }
+  .container .tag h2 {
+    font-size: 1.7rem;
+    margin-top: 30px;
+  }
+  .container .tag p {
+    width: 100%;
+  }
+  .container #tag1 form {
+    padding: 10px 0;
+  }
+  .container #tag1 form input {
+    padding-right: 20px;
+    border-radius: 5px;
+  }
+  .container #tag2 #options {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .container #tag2 #options .plan-option {
+    padding: 15px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .container #tag2 #options .plan-option img {
+    align-self: baseline;
+  }
+  .container #tag2 #options .plan-option .plan-option-info {
+    width: 100%;
+  }
+  .container #tag2 #options .plan-option .plan-option-info p, .container #tag2 #options .plan-option .plan-option-info span {
+    width: 100%;
+    margin: 3px 0;
+  }
+  .container #tag2 #options .plan-option .plan-option-info p:first-child {
+    display: inline-block;
+    margin-top: 0;
+  }
+  .container #tag2 #radio-option {
+    margin: 20px 0;
+  }
+  .container #tag3 {
+    padding-bottom: 0px;
+  }
+  .container #tag3 #add-ons-options {
+    margin: 30px 0;
+    width: 100%;
+  }
+  .container #tag4 {
+    padding-bottom: 40px;
+  }
+  .container #tag4 #result #active-plan #result-plan {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .container #tag4 #total #total-price {
+    font-size: 1.1rem;
+  }
+  .container #tag5 {
+    width: 85%;
+    padding: 100px 30px;
+  }
+  .container #tag5 img {
+    width: 60px;
+  }
+  .container.completed {
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

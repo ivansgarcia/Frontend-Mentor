@@ -1,0 +1,59 @@
+@import 'colors.scss';
+
+#tag2 {
+    #options {
+        margin: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+
+        .plan-option {
+            cursor: pointer;
+            width: 110px;
+            border: 1px solid $light-gray;
+            border-radius: 10px;
+            padding: 20px 15px;
+
+            p {
+                margin-top: 40px;
+                margin-bottom: 5px;
+                color: $marine-blue;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+
+            span.price {
+                font-size: 1rem;
+                color: $cool-gray;
+            }
+
+            p.discount {
+                display: none;
+                font-size: 0.8rem;
+                font-weight: 500;
+                margin: 10px 0 0;
+            }
+            &.selected {
+                border-color: $purplish-blue;
+                background-color: $alabaster;
+            }
+            &:hover {
+                border-color: hsl(243, 100%, 62%);
+            }
+
+        }
+    }
+    #radio-option {
+        background-color: $alabaster;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 0.95rem;
+        
+        span {
+            color: $cool-gray;
+            font-weight: 500;
+            display: inline-block;
+        }
+    }
+}

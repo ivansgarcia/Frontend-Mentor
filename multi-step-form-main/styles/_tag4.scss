@@ -1,0 +1,67 @@
+@import 'colors.scss';
+
+#tag4 {
+    font-size: 0.9rem;
+    #result {
+        list-style: none;
+        background-color: $alabaster;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-top: 50px;
+        
+        #active-plan {
+            width: 60%;
+            display: inline-block;
+            
+            #result-plan {
+                font-size: 1.1rem;
+                color: $marine-blue;
+                font-weight: bold;
+            }
+        }
+
+        #result-price {
+            float: right;
+            padding: 20px 0;
+            font-size: 1rem;
+            color: $marine-blue;
+            font-weight: bold;
+        }
+
+        a {
+            margin-top: -20px;
+            color: $cool-gray;
+            text-decoration-line: underline;
+            cursor: pointer;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 1px solid $light-gray;
+        }
+
+        .result-addOn {
+            color: $cool-gray;
+            padding: 10px 0;
+            span + span {
+                float: right;
+                color: $marine-blue;
+                font-weight: 700;
+            }
+        }
+    }
+
+    #total {
+        padding: 10px 20px;
+        span {
+            color: $cool-gray;
+            font-size: 0.9rem;
+        }
+        span + span {
+            float: right;
+            color: hsl(243, 100%, 62%);
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+    }
+}

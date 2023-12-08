@@ -1,0 +1,50 @@
+@import 'colors.scss';
+
+#tag1 {
+    display: inline-block;
+    form {
+        padding: 30px 0;
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 10px 0;
+            color: $marine-blue;
+        }
+
+        span {
+            display: none;
+            font-weight: 700;
+            color: $strawberry-red;
+            float: right;
+            margin-right: 0px;
+            font-size: 0.9rem;
+        }
+
+        input {
+            box-sizing: border-box;
+            cursor: pointer;
+            color: $marine-blue;
+            margin: 10px 0;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid $light-gray;
+            outline: none;
+            &:focus {
+                border-color: $purplish-blue;
+            }
+            &.checked {
+                background-color: hsl(217, 100%, 97%);
+                border-color: $purplish-blue;
+            }
+            &::placeholder {
+                color: silver;
+            }
+            
+        }
+    }
+}
