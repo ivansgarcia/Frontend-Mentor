@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Product preview card component</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link href="output.css" rel="stylesheet" />
+    </head>
+    <body
+        class="h-screen bg-cream flex flex-col justify-center items-center font-montserrat max-sm:p-4"
+    >
+        <div
+            class="flex max-sm:flex-col max-sm:items-center rounded-xl bg-white max-sm:w-full max-sm:max-w-sm"
+        >
+            <div
+                class="w-[20.6rem] bg-cover bg-[url('images/image-product-desktop.jpg')] rounded-l-xl max-sm:bg-[url('images/image-product-mobile.jpg')] max-sm:rounded-none max-sm:rounded-t-xl max-sm:w-full max-sm:h-80"
+            ></div>
+            <div
+                class="w-[20.6rem] px-9 py-9 flex flex-col justify-evenly gap-6 max-sm:gap-4 max-sm:p-6 max-sm:w-full"
+            >
+                <h2
+                    class="uppercase text-[14px] text-dark-grayish-blue tracking-[0.3em] opacity-80 font-semibold max-sm:text-base"
+                >
+                    Perfume
+                </h2>
+                <h1 class="text-4xl font-fraunces font-bold leading-8 max-sm:text-[38px]">
+                    Gabrielle Essence Eau De Parfum
+                </h1>
+                <p class="py-1 text-dark-grayish-blue opacity-90 text-[15px] leading-6 font-semibold max-sm:text-base">
+                    A floral, solar and voluptuous interpretation composed by
+                    Olivier Polge, Perfumer-Creator for the House of CHANEL.
+                </p>
+                <div class="flex items-center gap-5 py-2">
+                    <span
+                        class="text-4xl text-dark-cyan font-fraunces max-sm:text-[40px]"
+                        >$149.99</span
+                    >
+                    <span class="line-through text-dark-grayish-blue text-sm opacity-80 font-semibold max-sm:text-base"
+                        >$169.99</span
+                    >
+                </div>
+                <button
+                    class="bg-dark-cyan py-[14px] rounded-lg font-montserrat font-semibold text-white flex justify-center items-center gap-2 hover:bg-darker-cyan hover:outline-4 hover:py-[18px] hover:-my-1 max-sm:py-[16px] max-sm:hover:-my-[0.15rem]"
+                >
+                    <img class="w-4" src="images/icon-cart.svg" alt="cart" />
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

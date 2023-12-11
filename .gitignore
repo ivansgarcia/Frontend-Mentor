@@ -1,4 +1,5 @@
 */.vscode/settings.json
+*/**/node_modules/
 
 # Projects
 /my-app/
@@ -9,4 +10,3 @@
 /interactive-rating-component/
 /intro-section-with-dropdown-navigation/
 /nft-preview-card-component-main/
-/product-preview-card-component-main/
