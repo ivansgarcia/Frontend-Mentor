@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@layer utilities {
+    .btn-number {
+        @apply w-[60px] h-[60px] text-xl bg-dark-blue brightness-125 rounded-full transition-colors hover:bg-orange hover:text-white;
+    }
+    .container {
+        @apply py-9 max-w-[515px] sm:max-h-[525px] bg-dark-blue rounded-3xl;
+    }
+    .container-flex {
+        @apply flex flex-col justify-evenly items-center gap-9;
+    }
+    .selected {
+        @apply bg-light-grey text-white;
+    }
+}
