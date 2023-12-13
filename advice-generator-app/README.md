@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/advice-generator-using-reactjs-gatsbyjs-axios-and-tailwindcss-gacZvOuqIy
+- Live Site URL: https://lucky-croissant-16a479.netlify.app/
 
 ## My process
 
