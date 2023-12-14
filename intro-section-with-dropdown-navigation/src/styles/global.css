@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.arrow {
+    @apply w-4 h-2 ml-2 inline-block bg-no-repeat bg-down-arrow group-hover:bg-up-arrow;
+}

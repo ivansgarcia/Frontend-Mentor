@@ -52,4 +52,4 @@ To use the GatsbyJS framework for create this webpage and Axios for the connecti
 
 ## Author
 
-- Frontend Mentor - [@@ivansgarcia](https://www.frontendmentor.io/profile/ivansgarcia)
+- Frontend Mentor - [@ivansgarcia](https://www.frontendmentor.io/profile/ivansgarcia)
