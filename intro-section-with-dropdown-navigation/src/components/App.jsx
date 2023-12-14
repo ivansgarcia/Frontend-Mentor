@@ -16,7 +16,7 @@ const App = () => {
             </nav>
 
             <main className="flex justify-center p-8 mt-8 max-md:flex-col-reverse max-md:items-center max-md:justify-start max-md:mt-0 max-md:px-0">
-                <div className="w-1/2 ml-[5%] h-5/6 mt-8 flex flex-col items-center max-md:items-center max-md:w-full max-md:px-6 max-md:m-0 max-md:box-border">
+                <div className="w-1/2 ml-[7%] h-5/6 mt-8 flex flex-col items-center max-md:items-center max-md:w-full max-md:px-6 max-md:m-0 max-md:box-border">
                     <div className='flex flex-col justify-center max-md:gap-6'>
                         <h1 className="text-[80px] text-almost-black leading-[80px] my-8 font-bold max-w-xl max-md:m-0 max-md:text-4xl max-md:mt-8 max-md:text-center">
                             Make<br className='max-md:hidden'/> remote work
@@ -30,14 +30,14 @@ const App = () => {
                             Learn more
                         </button>
                     </div>
-                    <div className='text-center mt-16 self-start max-md:mx-0 max-md:self-center'>
+                    <div className='text-center w-full mt-16 -ml-10 max-md:mx-0 max-md:self-center'>
                         <img className="inline mr-8 py-2" src={databizImg} alt="databiz"/>
                         <img className="inline mr-8 py-2" src={audiophileImg} alt="audiophile"/>
                         <img className="inline mr-8 py-2" src={meetImg} alt="meet" />
                         <img className="inline mr-8 py-2" src={makerImg} alt="maker" />
                     </div>
                 </div>
-                <figure className={`w-1/2 bg-contain bg-no-repeat bg-hero-desktop max-md:bg-mobile-desktop max-md:h-96 max-md:w-full max-md:bg-center`}>
+                <figure className={`w-1/2 ml-[8%] bg-contain bg-no-repeat bg-hero-desktop max-md:bg-mobile-desktop max-md:h-96 max-md:w-full max-md:bg-center`}>
                     
                 </figure>
             </main>
