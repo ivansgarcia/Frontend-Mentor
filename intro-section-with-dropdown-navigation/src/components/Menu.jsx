@@ -8,7 +8,9 @@ const Menu = () => {
 
     const [showMenu, setShowMenu] = React.useState(false);
 
-    window.addEventListener('resize', () => setShowMenu(false));
+    if (typeof window !== 'undefined') {
+        window.addEventListener('resize', () => setShowMenu(false));
+    }
 
     return (
         <div className='w-screen h-full p-2 text-sm max-md:absolute flex flex-col'>

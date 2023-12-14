@@ -6,5 +6,8 @@ module.exports = {
     title: `Intro Section With Dropdown Navigation`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-postcss"]
+  plugins: ["gatsby-plugin-postcss"],
+  flags: {
+    DEV_SSR: true,
+  },
 };
