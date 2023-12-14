@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-with-gatsbyjs-and-tailwindcss-MWtm6oHYwr
 - Live Site URL: https://fancy-boba-3f5c77.netlify.app/
 
 ## My process
