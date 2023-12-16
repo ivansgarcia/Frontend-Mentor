@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    /* font-family: 'DM Sans', sans-serif; */
+    /* min-width: 400px; */
+    font-size: 18px;
+}
