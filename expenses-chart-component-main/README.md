@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/expenses-chart-component-using-gatsbyjs-and-tailwindcss-RmPlfQsF8Q
+- Live Site URL: https://inquisitive-baklava-78a21f.netlify.app/
 
 ## My process
 
