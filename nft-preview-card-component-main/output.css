@@ -695,6 +695,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -806,20 +810,20 @@ video {
   height: 100vh;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
 .w-80 {
   width: 20rem;
 }
 
-.w-\[15px\] {
-  width: 15px;
-}
-
 .w-\[30px\] {
   width: 30px;
-}
-
-.w-\[9px\] {
-  width: 9px;
 }
 
 .w-full {
@@ -828,6 +832,58 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[330px\] {
+  width: 330px;
+}
+
+.w-\[230px\] {
+  width: 230px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-2\.5 {
+  width: 0.625rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.min-w-\[275px\] {
+  min-width: 275px;
+}
+
+.min-w-\[250px\] {
+  min-width: 250px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .flex-shrink {
@@ -1352,6 +1408,14 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1934,13 +1998,22 @@ video {
      object-fit: scale-down;
 }
 
-.p-\[22px\] {
-  padding: 22px;
+.p-6 {
+  padding: 1.5rem;
 }
 
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-left {
@@ -2003,19 +2076,41 @@ video {
   font-family: Outfit, sans-serif;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+.text-\[21px\] {
+  font-size: 21px;
 }
 
 .font-bold {
@@ -2024,6 +2119,14 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
