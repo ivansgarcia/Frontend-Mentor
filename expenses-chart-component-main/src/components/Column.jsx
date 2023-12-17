@@ -11,7 +11,7 @@ const Column = ({ day, amount, isMax }) => {
 
     return (
         <div className="h-[230px] text-xs w-12 flex flex-col items-center justify-end group cursor-pointer max-sm:w-[10%]">
-            <div className="hidden text-white text-lg bg-dark-brown px-2 py-1.5 mb-2 rounded-lg group-hover:inline">{`$${amount}`}</div>
+            <div className="hidden z-10 text-white text-lg bg-dark-brown px-2 py-1.5 mb-2 rounded-lg group-hover:inline max-sm:text-base">{`$${amount}`}</div>
             <div
                 className={`${
                     isMax ? 'bg-cyan' : 'bg-soft-red'
