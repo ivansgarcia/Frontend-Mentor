@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.score-btn {
+    filter: invert(82%) sepia(8%) saturate(1063%) hue-rotate(201deg) brightness(99%) contrast(89%);
+    cursor: default;
+}
+
+.score-btn-hover:hover {
+    filter: invert(33%) sepia(94%) saturate(651%) hue-rotate(207deg) brightness(84%) contrast(86%);
+    cursor: pointer;
+}
+
+.MuiDialog-paper {
+    margin: 15px;
+}
