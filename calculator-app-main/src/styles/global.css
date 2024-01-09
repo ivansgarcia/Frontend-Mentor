@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .key {
+        @apply pt-2 flex justify-center items-center rounded-lg shadow-[0_4px] active:brightness-150 sm:hover:brightness-150;
+    }
+
+    .key-normal {
+        @apply text-[32px] text-key-text bg-normal-key-bg shadow-normal-key-shadow sm:text-[40px];
+    }
+
+    .key-del {
+        @apply text-xl text-white bg-del-key-bg shadow-del-key-shadow sm:text-[28px];
+    }
+
+    .key-equal {
+        @apply text-xl text-equal-key-text bg-equal-key-toggle-bg shadow-equal-key-shadow sm:text-[28px];
+    }
+}
+
+@layer base {
+    main[data-theme='theme-1'] {
+        --color-main-bg: 222, 26%, 31%;
+        --color-toggle-keypad-bg: 223, 31%, 20%;
+        --color-screen-bg: 224, 36%, 15%;
+        --color-del-key-bg: 225, 21%, 49%;
+        --color-del-key-shadow: 224, 28%, 35%;
+        --color-equal-key-toggle-bg: 6, 63%, 50%;
+        --color-equal-key-shadow: 6, 70%, 34%;
+        --color-normal-key-bg: 30, 25%, 89%;
+        --color-normal-key-shadow: 28, 16%, 65%;
+        --color-key-text: 221, 14%, 31%;
+        --color-equal-key-text: 100, 100%, 100%;
+        --color-text: 100, 100%, 100%;
+        --color-white: 100, 100%, 100%;
+    }
+
+    main[data-theme='theme-2'] {
+        --color-main-bg: 0, 0%, 90%;
+        --color-toggle-keypad-bg: 0, 5%, 81%;
+        --color-screen-bg: 0, 0%, 93%;
+        --color-del-key-bg: 185, 42%, 37%;
+        --color-del-key-shadow: 185, 58%, 25%;
+        --color-equal-key-toggle-bg: 25, 98%, 40%;
+        --color-equal-key-shadow: 25, 99%, 27%;
+        --color-normal-key-bg: 45, 7%, 89%;
+        --color-normal-key-shadow: 35, 11%, 61%;
+        --color-key-text: 60, 10%, 19%;
+        --color-equal-key-text: 60, 10%, 19%;
+        --color-text: 60, 10%, 19%;
+        --color-white: 100, 100%, 100%;
+    }
+
+    main[data-theme='theme-3'] {
+        --color-main-bg: 268, 75%, 9%;
+        --color-toggle-keypad-bg: 268, 71%, 12%;
+        --color-screen-bg: 268, 71%, 12%;
+        --color-del-key-bg: 281, 89%, 26%;
+        --color-del-key-shadow: 285, 91%, 52%;
+        --color-equal-key-toggle-bg: 176, 100%, 44%;
+        --color-equal-key-shadow: 177, 92%, 70%;
+        --color-normal-key-bg: 268, 47%, 21%;
+        --color-normal-key-shadow: 290, 70%, 36%;
+        --color-key-text: 52, 100%, 62%;
+        --color-equal-key-text: 198, 20%, 13%;
+        --color-text: 52, 100%, 62%;
+        --color-white: 100, 100%, 100%;
+    }
+}
