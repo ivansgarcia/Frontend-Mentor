@@ -6,5 +6,5 @@ module.exports = {
     title: `Calculator App`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-postcss"]
+  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-offline"]
 };

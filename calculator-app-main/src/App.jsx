@@ -5,7 +5,7 @@ import Header from './components/Header';
 
 const App = () => {
 
-    const preferredScheme = window.matchMedia('(prefers-color-scheme: light)').matches;
+    const preferredScheme = typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: light)').matches;
 
     const [number, setNumber] = useState('0');
     const [equation, setEquation] = useState([]);
