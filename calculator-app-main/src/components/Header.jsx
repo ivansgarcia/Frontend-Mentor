@@ -26,7 +26,7 @@ const Header = ({ theme, setTheme }) => {
     };
 
     return (
-        <header className="w-full pb-4 flex justify-between items-end text-text sm:py-1">
+        <header className="w-full pb-4 flex justify-between items-end text-text sm:pb-1">
             <span className="text-3xl">calc</span>
             <div className="text-xs tracking-widest flex justify-between items-end gap-6">
                 <span className="mb-1">THEME</span>
