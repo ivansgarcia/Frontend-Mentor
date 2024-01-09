@@ -1,3 +1,5 @@
+// TODO: and fix first oppening always theme = 1
+
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -11,13 +13,13 @@ module.exports = {
         {
           resolve: `gatsby-plugin-manifest`,
           options: {
-            name: `GatsbyJS`,
-            short_name: `GatsbyJS`,
+            name: `Calculator App`,
+            short_name: `Calculator`,
             start_url: `/`,
             background_color: `#f7f0eb`,
-            theme_color: `#a2466c`,
+            theme_color: `#EAE3DC`,
             display: `standalone`,
-            icon: 'static/favicon.ico',
+            icon: 'static/icon.png',
           },
         },
         'gatsby-plugin-offline',

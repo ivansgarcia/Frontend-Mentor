@@ -9,12 +9,13 @@ const App = () => {
 
     const [number, setNumber] = useState('0');
     const [equation, setEquation] = useState([]);
-    const [theme, setTheme] = useState(preferredScheme ? 2 : 1);
+    const [theme, setTheme] = useState(1);
 
     useEffect(() => {
+        setTheme(preferredScheme ? 2 : 1);
         const savedTheme = localStorage.getItem('theme');
         savedTheme && setTheme(Number(savedTheme));
-    }, [])
+    }, [preferredScheme])
 
     return (
         <main
