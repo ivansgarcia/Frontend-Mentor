@@ -11,10 +11,12 @@ const Keyboard = ({ number, setNumber, equation, setEquation }) => {
             if (isNumber(n) && n !== '0') {
                 setNumber(n);
                 setEquation([n]);
-            }
-            if (n === '.') {
+            } else if (n === '.') {
                 setNumber('0.');
                 setEquation(['0.']);
+            } else {
+                setNumber('0');
+                n !== '0' && setEquation(['0', n]);
             }
         }
 
