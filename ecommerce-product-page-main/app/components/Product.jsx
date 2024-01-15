@@ -23,7 +23,7 @@ const Product = ({ addToCart }) => {
     };
 
     return (
-        <div className="w-full flex flex-col items-center sm:flex-row sm:justify-evenly sm:gap-10 sm:-ml-10">
+        <div className="w-full flex flex-col items-center sm:flex-row sm:justify-evenly sm:gap-10 sm:-ml-4">
             <Gallery isModal={false} />
             <div className="sm:max-w-[480px]">
                 <div className="p-6 flex flex-col gap-4 sm:gap-6 sm:-mt-10">
@@ -39,8 +39,8 @@ const Product = ({ addToCart }) => {
                         they&apos;ll withstand everything the weather can offer.
                     </p>
                 </div>
-                <div className="w-full px-4 flex flex-col items-center gap-4 sm:mt-1">
-                    <div className="w-full flex items-center gap-4 sm:flex-wrap sm:pr-2">
+                <div className="w-full px-4 flex flex-col items-center gap-4 sm:mt-1 sm:pr-4">
+                    <div className="w-full flex items-center gap-4 sm:flex-wrap">
                         <h2 className="text-3xl font-bold">$125.00</h2>
                         <h3 className="font-bold py-0.5 text-orange-btn bg-pale-orange px-2 rounded">
                             50%
@@ -50,7 +50,7 @@ const Product = ({ addToCart }) => {
                         </h4>
                     </div>
                     <div className="w-full flex flex-col gap-4 sm:flex-row sm:gap-4 sm:mt-3">
-                        <div className="w-full p-2 flex justify-between items-center bg-light-grayish-blue sm:w-[65%] rounded">
+                        <div className="w-full p-2 flex justify-between items-center bg-light-grayish-blue sm:w-[52%] rounded-lg">
                             <button
                                 className="active:opacity-50 p-2 sm:hover:opacity-50 transition-opacity"
                                 onClick={() =>
@@ -64,7 +64,7 @@ const Product = ({ addToCart }) => {
                                     height="auto"
                                 />
                             </button>
-                            <span className="font-bold text-lg">
+                            <span className="font-bold">
                                 {quantity}
                             </span>
                             <button

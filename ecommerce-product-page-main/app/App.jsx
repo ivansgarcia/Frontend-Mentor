@@ -15,7 +15,7 @@ const App = () => {
     }
 
     return (
-        <div className="w-full pb-8 font-kumbh-sans flex flex-col items-center max-w-[1155px] m-auto sm:px-6">
+        <div className="w-full pb-8 font-kumbh-sans flex flex-col items-center max-w-[1150px] m-auto sm:px-6">
             <Header cartQuantity={cartQuantity} setCartQuantity={setCartQuantity} showCart={showCart} setShowCart={setShowCart}/>
             <Product addToCart={addToCart}/>
         </div>

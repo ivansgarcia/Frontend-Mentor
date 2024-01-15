@@ -12,8 +12,8 @@ const Header = ({ cartQuantity, setCartQuantity, showCart, setShowCart }) => {
         <>
             <div className="w-full h-full p-5 flex items-center gap-4 sm:py-0 sm:px-0">
                 <Menu />
-                <Image className="pb-1 sm:w-[132px]" src={logo} alt="logo" />
-                <ul className="w-full h-[114px] hidden gap-[5%] px-10 items-end text-[15px] text-dark-grayish-blue sm:flex">
+                <Image className="pb-1 sm:w-[145px]" src={logo} alt="logo" />
+                <ul className="w-full h-[114px] text-[15px] hidden gap-[4.5%] px-10 items-end text-dark-grayish-blue sm:flex">
                     <li className="h-[68px] cursor-pointer hover:text-black hover:border-b-4 border-orange-btn transition-colors">Collections</li>
                     <li className="h-[68px] cursor-pointer hover:text-black hover:border-b-4 border-orange-btn">Men</li>
                     <li className="h-[68px] cursor-pointer hover:text-black hover:border-b-4 border-orange-btn">Women</li>
@@ -23,7 +23,7 @@ const Header = ({ cartQuantity, setCartQuantity, showCart, setShowCart }) => {
                 <button
                     ref={cartBtnRef}
                     onClick={() => setShowCart(!showCart)}
-                    className="group w-6 relative ml-auto transition-colors"
+                    className="group w-9 relative ml-auto transition-colors"
                 >
                     <svg
                         width="22"
@@ -44,7 +44,7 @@ const Header = ({ cartQuantity, setCartQuantity, showCart, setShowCart }) => {
                     )}
                 </button>
                 <Image
-                    className="sm:w-16 sm:ml-6 rounded-full cursor-pointer active:outline sm:hover:outline outline-2 outline-orange-btn"
+                    className="sm:w-[70px] sm:ml-6 rounded-full cursor-pointer active:outline sm:hover:outline outline-2 outline-orange-btn"
                     src={avatar}
                     alt="avatar"
                     width={24}
