@@ -39,8 +39,8 @@ const Product = ({ addToCart }) => {
                         they&apos;ll withstand everything the weather can offer.
                     </p>
                 </div>
-                <div className="w-full px-6 flex flex-col items-center gap-4 sm:mt-1">
-                    <div className="w-full flex items-center gap-4 sm:flex-wrap">
+                <div className="w-full px-4 flex flex-col items-center gap-4 sm:mt-1">
+                    <div className="w-full flex items-center gap-4 sm:flex-wrap sm:pr-2">
                         <h2 className="text-3xl font-bold">$125.00</h2>
                         <h3 className="font-bold py-0.5 text-orange-btn bg-pale-orange px-2 rounded">
                             50%
@@ -49,8 +49,8 @@ const Product = ({ addToCart }) => {
                             $250.00
                         </h4>
                     </div>
-                    <div className="w-full flex flex-col gap-4 sm:flex-row sm:gap-4 sm:mt-3 rounded">
-                        <div className="w-full p-2 flex justify-between items-center bg-light-grayish-blue sm:w-[75%]">
+                    <div className="w-full flex flex-col gap-4 sm:flex-row sm:gap-4 sm:mt-3">
+                        <div className="w-full p-2 flex justify-between items-center bg-light-grayish-blue sm:w-[65%] rounded">
                             <button
                                 className="active:opacity-50 p-2 sm:hover:opacity-50 transition-opacity"
                                 onClick={() =>
@@ -85,9 +85,9 @@ const Product = ({ addToCart }) => {
                         >
                             <div ref={tooltipRef} className="animate-[scale-in-center_0.15s] absolute hidden py-2 px-4 -top-12 bg-pale-orange rounded text-orange-btn">
                                 Select number of items
-                                {/* <div className="border-r-2 border-b-2 border-orange-btn bg-pale-orange w-4 h-4 rotate-45 mx-auto absolute"></div> */}
                             </div>
                             <svg
+                                className="scale-[0.8]"
                                 width="22"
                                 height="20"
                                 xmlns="http://www.w3.org/2000/svg"

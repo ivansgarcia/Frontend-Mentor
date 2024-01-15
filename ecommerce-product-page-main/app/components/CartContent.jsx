@@ -3,24 +3,24 @@ import React, { useEffect, useRef } from 'react';
 import productImageThumb from '../images/image-product-1-thumbnail.jpg';
 import deleteIcon from '../images/icon-delete.svg';
 
-const CartContent = ({ cartQuantity, setCartQuantity, setShowCart }) => {
+const CartContent = ({ cartQuantity, setCartQuantity, setShowCart, cartBtnRef }) => {
     const cartRef = useRef(null);
 
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         const clickAction = (e) => {
-            !cartRef.current.contains(e.target) && setShowCart(false);
+            (!cartRef.current.contains(e.target) && !cartBtnRef.current.contains(e.target) ) && setShowCart(false);
         };
         document.addEventListener('mousedown', clickAction);
         return () => {
             document.removeEventListener('mousedown', clickAction);
         };
-    }, [setShowCart]);
+    }, [setShowCart, cartBtnRef]);
 
     return (
         <div
             ref={cartRef}
-            className="absolute px-6 py-8 top-20 z-10 w-[95%] flex flex-col gap-6 bg-white rounded-lg shadow-[0_10px_10px_0px_hsla(0,0%,0%,0.3)] sm:w-96 sm:right-0 sm:top-28"
+            className="absolute px-6 py-8 top-20 z-10 w-[95%] flex flex-col gap-6 bg-white rounded-lg shadow-[0_10px_10px_0px_hsla(0,0%,0%,0.3)] sm:w-96 sm:right-[4%] sm:top-24"
         >
             <h5 className="font-bold -mt-2">Cart</h5>
             <hr className="-mx-6" />
