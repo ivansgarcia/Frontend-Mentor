@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/rock-paper-scissors-game-pwa-using-gatsbyjs-react-an-tailwind-css-2OA_d6S6Kb
+- Live Site URL: https://stirring-frangipane-e740a9.netlify.app/
 
 ## My process
 

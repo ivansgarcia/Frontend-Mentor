@@ -11,7 +11,7 @@ const HouseOption = ({ setHousePick }) => {
     }, [setHousePick, randomTime]);
 
     return (
-        <div className="animate-[pulse_1s_ease-in-out_infinite] w-24 h-24 mt-4 sm:big-screen:mt-12 rounded-full bg-dark-text"></div>
+        <div className="animate-[pulse_1s_ease-in-out_infinite] w-24 h-24 mt-4 sm:big-screen:mt-14 rounded-full bg-dark-text"></div>
     );
 };
 
