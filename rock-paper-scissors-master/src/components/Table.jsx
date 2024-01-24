@@ -22,7 +22,7 @@ const Table = ({ result, setResult }) => {
                     !selection
                         ? 'bg-[url("../images/bg-triangle-small.svg")] sm:big-screen:bg-[url("../images/bg-triangle.svg")] sm:big-screen:scale-[1.5]'
                         : 'sm:big-screen:scale-[2.3] sm:big-screen:translate-y-32 delay-500'
-                } bg-no-repeat bg-center transition-transform duration-500 sm:mobile-landscape:scale-75 sm:mobile-landscape:top-[35%]`}
+                } bg-no-repeat bg-center transition-transform duration-500 sm:mobile-landscape:scale-75 sm:mobile-landscape:top-[35%] `}
             >
                 <div
                     className={`absolute -top-14 -left-12  flex flex-col gap-4 items-center sm:big-screen:gap-6 sm:big-screen:flex-col-reverse transition-transform ${

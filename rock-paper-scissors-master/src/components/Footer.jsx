@@ -6,7 +6,7 @@ const Footer = () => {
     const [showRules, setShowRules] = useState(false);
 
     return (
-        <div className="mb-[15%] flex justify-center sm:big-screen:my-0 sm:self-end sm:mb-0">
+        <div className="mb-[15%] flex justify-center sm:big-screen:my-0 sm:self-end sm:mb-0 sm:mobile-landscape:mb-2">
             <button
                 onClick={() => setShowRules(true)}
                 className={`py-2 px-12 text-white border tracking-widest border-white rounded-lg active:scale-110 sm:big-screen:hover:scale-110 transition-transform ${
@@ -22,14 +22,14 @@ const Footer = () => {
                             RULES
                         </span>
                         <img
-                            className="p-5 pb-2 sm:mobile-landscape:w-1/2"
+                            className="p-5 pb-2 sm:mobile-landscape:max-w-[40%]"
                             src={rulesImage}
                             width={500}
                             height={500}
                             alt="rules"
                         />
                         <button
-                            className="active:scale-110 sm:big-screen:hover:scale-110 sm:big-screen:absolute sm:big-screen:top-10 sm:big-screen:right-8 sm:big-screen:w-5"
+                            className="active:scale-110 sm:big-screen:hover:scale-110 sm:big-screen:absolute sm:big-screen:top-10 sm:big-screen:right-8 sm:big-screen:w-5 sm:mobile-landscape:absolute sm:mobile-landscape:right-8 sm:mobile-landscape:top-8"
                             onClick={() => setShowRules(false)}
                         >
                             <img
