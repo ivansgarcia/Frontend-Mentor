@@ -30,7 +30,11 @@ const Table = ({ result, setResult }) => {
                         (selection === 'scissors'
                             ? '-translate-x-[85px] translate-y-2 scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
                             : 'invisible')
-                    } ${result ? 'sm:-translate-x-[194px]' : selection && 'sm:-translate-x-32'}`}
+                    } ${
+                        result
+                            ? 'sm:-translate-x-[194px]'
+                            : selection && 'sm:-translate-x-32'
+                    }`}
                 >
                     <Option
                         type="scissors"
@@ -46,7 +50,9 @@ const Table = ({ result, setResult }) => {
                 {selection && (
                     <div
                         className={`absolute -z-10 -top-6 -right-2 scale-150 flex flex-col gap-4 sm:mobile-landscape:gap-2 items-center transition-transform duration-500 sm:scale-[1.9] sm:flex-col-reverse ${
-                            result ? 'sm:translate-x-[106px]' : 'sm:translate-x-10'
+                            result
+                                ? 'sm:translate-x-[106px]'
+                                : 'sm:translate-x-10'
                         }`}
                     >
                         {!housePick ? (
@@ -71,7 +77,11 @@ const Table = ({ result, setResult }) => {
                         (selection === 'spock'
                             ? '-translate-y-[72px] translate-x-4 scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
                             : 'invisible')
-                    } ${result ? 'sm:-translate-x-[84px]' : selection && 'sm:-translate-x-4'}`}
+                    } ${
+                        result
+                            ? 'sm:-translate-x-[84px]'
+                            : selection && 'sm:-translate-x-4'
+                    }`}
                 >
                     <Option
                         type="spock"
@@ -90,7 +100,11 @@ const Table = ({ result, setResult }) => {
                         (selection === 'paper'
                             ? '-translate-x-52 -translate-y-[72px] scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
                             : 'invisible')
-                    } ${result ? 'sm:-translate-x-[306px]' : selection && 'sm:-translate-x-60'}`}
+                    } ${
+                        result
+                            ? 'sm:-translate-x-[306px]'
+                            : selection && 'sm:-translate-x-60'
+                    }`}
                 >
                     <Option
                         type="paper"
@@ -109,7 +123,11 @@ const Table = ({ result, setResult }) => {
                         (selection === 'lizard'
                             ? '-translate-x-6 -translate-y-[184px] scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
                             : 'invisible')
-                    } ${result ? 'sm:-translate-x-[124px]' : selection && 'sm:-translate-x-14'}`}
+                    } ${
+                        result
+                            ? 'sm:-translate-x-[124px]'
+                            : selection && 'sm:-translate-x-14'
+                    }`}
                 >
                     <Option
                         type="lizard"
@@ -128,7 +146,11 @@ const Table = ({ result, setResult }) => {
                         (selection === 'rock'
                             ? '-translate-x-[168px] -translate-y-[184px] scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
                             : 'invisible')
-                    } ${result ? 'sm:-translate-x-[266px]' : selection && 'sm:-translate-x-[200px]'}`}
+                    } ${
+                        result
+                            ? 'sm:-translate-x-[266px]'
+                            : selection && 'sm:-translate-x-[200px]'
+                    }`}
                 >
                     <Option
                         type="rock"

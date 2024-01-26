@@ -1,7 +1,5 @@
 import React from 'react';
 
-//TODO: pasar Result a absolute para no redimensionar Table
-
 const Result = ({ result, setSelection, setHousePick, setResult }) => {
     const restart = () => {
         setTimeout(() => {
