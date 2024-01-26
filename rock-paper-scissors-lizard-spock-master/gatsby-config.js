@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Rock Paper Scissors`,
+    title: `Rock Paper Scissors Lizard Spoke`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-postcss", {
@@ -17,5 +17,5 @@ module.exports = {
         display: `fullscreen`,
         icon: "src/images/icon.jpg"
     }
-  }, "gatsby-plugin-offline"],
+  }]
 };
