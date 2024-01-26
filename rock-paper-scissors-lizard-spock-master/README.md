@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/rock-paper-scissors-game-pwa-using-gatsbyjs-react-an-tailwind-css-2OA_d6S6Kb
-- Live Site URL: https://stirring-frangipane-e740a9.netlify.app/
+- Solution URL: hhttps://www.frontendmentor.io/solutions/rock-paper-scissors-lizard-spock-game-pwa-created-with-gatsbyjs-_Q7UfCykRL
+- Live Site URL: https://prismatic-alpaca-d7770e.netlify.app/
 
 ## My process
 

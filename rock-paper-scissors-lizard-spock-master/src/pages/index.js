@@ -9,4 +9,14 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => (
+  <>
+        <html lang="en">
+            <meta
+                name="description"
+                content="Funney Rock, paper, scissors, lizard, spock interactive game"
+            />
+            <title>Rock Paper Scissors Lizard Spock</title>;
+        </html>
+    </>
+);
