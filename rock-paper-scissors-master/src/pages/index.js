@@ -10,12 +10,11 @@ export default IndexPage;
 
 export const Head = () => (
     <>
-        <html lang="en">
-            <meta
-                name="description"
-                content="Funney Rock, paper, scissors interactive game"
-            />
-            <title>Rock Paper Scissors</title>;
-        </html>
+        <html lang="en" />
+        <meta
+            name="description"
+            content="Funny Rock, paper, scissors interactive game"
+        />
+        <title>Rock Paper Scissors</title>;
     </>
 );

@@ -1,8 +1,8 @@
 {
-  "name": "rock-paper-scissors-lizard-spoke",
+  "name": "rock-paper-scissors-lizard-spock",
   "version": "1.0.0",
   "private": true,
-  "description": "rock-paper-scissors-lizard-spoke",
+  "description": "rock-paper-scissors-lizard-spock",
   "author": "ivansalinas",
   "keywords": [
     "gatsby"
@@ -18,6 +18,7 @@
     "autoprefixer": "^10.4.17",
     "gatsby": "^5.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-offline": "^6.13.1",
     "gatsby-plugin-postcss": "^6.13.1",
     "postcss": "^8.4.33",
     "react": "^18.2.0",
