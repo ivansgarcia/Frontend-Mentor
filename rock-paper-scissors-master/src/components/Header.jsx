@@ -3,7 +3,7 @@ import logo from '../images/logo.svg';
 
 const Header = ({ points }) => {
     return (
-        <div className="w-full h-28 max-w-[720px] p-3 flex justify-between items-center border-4 border-header-outline rounded-lg sm:big-screen:rounded-2xl sm:big-screen:px-6 sm:big-screen:h-auto sm:mobile-landscape:scale-50 sm:mobile-landscape:-mt-6 sm:big-screen:py-4">
+        <div className="w-full h-28 max-w-[720px] p-3 flex justify-between items-center border-4 border-header-outline rounded-lg sm:big-screen:rounded-2xl sm:big-screen:px-6 sm:big-screen:h-40 sm:mobile-landscape:scale-50 sm:mobile-landscape:-mt-6 sm:big-screen:py-4">
             <img
                 className="w-24 pl-2 sm:big-screen:w-36"
                 src={logo}
