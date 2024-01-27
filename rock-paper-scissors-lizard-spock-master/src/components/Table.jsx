@@ -4,7 +4,7 @@ import Result from './Result';
 import HouseOption from './HouseOption';
 import { calculateResult } from '../utils/calculateResult';
 
-const Table = ({ result, setResult }) => {
+const Table = ({ result, setResult, points, setPoints }) => {
     const [selection, setSelection] = useState(null);
     const [housePick, setHousePick] = useState(null);
 
@@ -75,7 +75,7 @@ const Table = ({ result, setResult }) => {
                     className={`absolute top-12 -left-8 flex flex-col gap-4 sm:mobile-landscape:gap-2 items-center transition-transform ${
                         selection &&
                         (selection === 'spock'
-                            ? '-translate-y-[72px] translate-x-4 scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
+                            ? '-translate-y-[72px] translate-x-7 scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
                             : 'invisible')
                     } ${
                         result
@@ -98,7 +98,7 @@ const Table = ({ result, setResult }) => {
                     className={`absolute top-12 -right-8 flex flex-col gap-4 sm:mobile-landscape:gap-2 items-center transition-transform ${
                         selection &&
                         (selection === 'paper'
-                            ? '-translate-x-52 -translate-y-[72px] scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
+                            ? '-translate-x-[196px] -translate-y-[72px] scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
                             : 'invisible')
                     } ${
                         result
@@ -121,7 +121,7 @@ const Table = ({ result, setResult }) => {
                     className={`absolute -bottom-8 left-2 flex flex-col gap-4 sm:mobile-landscape:gap-2 items-center transition-transform ${
                         selection &&
                         (selection === 'lizard'
-                            ? '-translate-x-6 -translate-y-[184px] scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
+                            ? '-translate-x-3 -translate-y-[184px] scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
                             : 'invisible')
                     } ${
                         result
@@ -144,7 +144,7 @@ const Table = ({ result, setResult }) => {
                     className={`absolute -bottom-8 right-2 flex flex-col gap-4 sm:mobile-landscape:gap-2 items-center transition-transform ${
                         selection &&
                         (selection === 'rock'
-                            ? '-translate-x-[168px] -translate-y-[184px] scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
+                            ? '-translate-x-[156px] -translate-y-[184px] scale-150 duration-500 sm:scale-[1.9] sm:flex-col-reverse'
                             : 'invisible')
                     } ${
                         result
@@ -170,6 +170,8 @@ const Table = ({ result, setResult }) => {
                     setResult={setResult}
                     setHousePick={setHousePick}
                     setSelection={setSelection}
+                    points={points}
+                    setPoints={setPoints}
                 />
             )}
         </>

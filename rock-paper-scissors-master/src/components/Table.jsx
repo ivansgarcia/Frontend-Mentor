@@ -4,7 +4,7 @@ import Result from './Result';
 import HouseOption from './HouseOption';
 import { calculateResult } from '../utils/calculateResult';
 
-const Table = ({ result, setResult }) => {
+const Table = ({ result, setResult, points, setPoints }) => {
     const [selection, setSelection] = useState(null);
     const [housePick, setHousePick] = useState(null);
 
@@ -116,6 +116,8 @@ const Table = ({ result, setResult }) => {
                     setResult={setResult}
                     setHousePick={setHousePick}
                     setSelection={setSelection}
+                    points={points}
+                    setPoints={setPoints}
                 />
             )}
         </>

@@ -1,8 +1,17 @@
 import React from 'react';
 
-const Result = ({ result, setSelection, setHousePick, setResult }) => {
+const Result = ({
+    result,
+    setSelection,
+    setHousePick,
+    setResult,
+    points,
+    setPoints,
+}) => {
     const restart = () => {
         setTimeout(() => {
+            result === 'WIN' && setPoints(points + 1);
+            result === 'LOSE' && setPoints(points - 1);
             setSelection(null);
             setHousePick(null);
             setResult(null);

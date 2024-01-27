@@ -6,7 +6,7 @@ const Footer = () => {
     const [showRules, setShowRules] = useState(false);
 
     return (
-        <div className="mb-8 flex justify-center sm:self-end sm:-mb-8">
+        <div className="mb-10 flex justify-center sm:self-end sm:-mb-8">
             <button
                 onClick={() => setShowRules(true)}
                 className={`py-2 px-12 text-white border tracking-widest border-white rounded-lg sm:big-screen:mb-6 active:scale-110 sm:big-screen:hover:scale-110 transition-transform ${
