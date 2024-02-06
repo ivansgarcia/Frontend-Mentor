@@ -27,6 +27,8 @@ const App = () => {
         }
     }, [theme]);
 
+    console.log(theme);
+
     return (
         <div
             className={`h-full w-full font-nunito-sans ${theme} flex flex-col items-center`}

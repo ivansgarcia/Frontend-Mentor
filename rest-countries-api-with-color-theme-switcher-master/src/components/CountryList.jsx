@@ -46,7 +46,7 @@ const CountryList = ({ setShowCountryDetail }) => {
         <div className="h-full min-h-screen w-full bg-light-background py-8 text-light-text transition-colors dark:bg-dark-background dark:text-white">
             <Navigator filterBy={filterBy} setLoading={setLoading} />
             {!!currentList.length ? (
-                <ul className="mx-auto mt-80 flex h-full w-full max-w-[1440px] flex-col items-center gap-20 px-8 sm:mt-48 sm:flex-row sm:flex-wrap sm:gap-[73px] sm:px-20">
+                <ul className="mx-auto mt-80 flex h-full w-full max-w-[1440px] flex-col items-center gap-20 px-12 sm:mt-48 sm:flex-row sm:flex-wrap sm:gap-[73px] sm:px-20">
                     {currentList.map((country, index) => (
                         <CountryPreview
                             key={index}
@@ -56,7 +56,9 @@ const CountryList = ({ setShowCountryDetail }) => {
                     ))}
                 </ul>
             ) : (
-                <p className="mt-96 w-64 text-center mx-auto text-light-text dark:text-white">No countries found</p>
+                <p className="mx-auto mt-96 w-64 text-center text-light-text dark:text-white">
+                    No countries found
+                </p>
             )}
         </div>
     );

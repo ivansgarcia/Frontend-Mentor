@@ -11,7 +11,7 @@ const Header = ({ toggleTheme, theme }) => {
                     onClick={toggleTheme}
                     className="background-custom -mr-4 flex items-center gap-2 rounded-lg p-4 font-semibold transition "
                 >
-                    {theme === '' ? (
+                    {!theme ? (
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="w-4 stroke-light-text dark:stroke-white"

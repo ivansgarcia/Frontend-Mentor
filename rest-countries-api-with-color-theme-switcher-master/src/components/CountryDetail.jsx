@@ -26,7 +26,7 @@ const CountryDetail = ({ country, setShowCountryDetail }) => {
     }, [borders]);
 
     return (
-        <div className="flex h-full min-h-screen w-full flex-col bg-light-background  py-32 text-light-text transition-colors dark:bg-dark-background dark:text-white">
+        <div className="flex h-full min-h-screen w-full flex-col bg-light-background px-7 py-32 text-light-text transition-colors dark:bg-dark-background dark:text-white sm:px-0">
             <div className="mx-auto w-full max-w-[1440px] sm:px-16">
                 <button
                     onClick={() => setShowCountryDetail(null)}
@@ -54,7 +54,7 @@ const CountryDetail = ({ country, setShowCountryDetail }) => {
                         alt={flags.alt}
                         className="my-10 aspect-flag max-w-[565px] sm:w-1/2"
                     />
-                    <div className="p-8 sm:w-[48%]">
+                    <div className="sm:p-8 sm:w-[48%]">
                         <h2 className="mb-6 text-xl font-extrabold sm:text-3xl">
                             {name.common}
                         </h2>
