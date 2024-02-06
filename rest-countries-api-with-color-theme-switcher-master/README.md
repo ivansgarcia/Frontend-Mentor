@@ -32,9 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Solution URL: https://www.frontendmentor.io/solutions/rest-country-api-with-react-gatsby-and-tailwind-75vuTpWQJl
+- Live Site URL: https://country-rest-api-exercise.netlify.app/
 ## My process
 
 ### Built with
