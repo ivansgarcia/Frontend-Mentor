@@ -20,7 +20,11 @@ const App = () => {
     };
 
     useEffect(() => {
-        localStorage.setItem('theme', theme);
+        try {
+            localStorage.setItem('theme', theme);
+        } catch (e) {
+            console.log(e);
+        }
     }, [theme]);
 
     return (
