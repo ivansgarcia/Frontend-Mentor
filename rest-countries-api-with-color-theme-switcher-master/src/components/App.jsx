@@ -6,8 +6,8 @@ import CountryDetail from './CountryDetail';
 const App = () => {
     const [theme, setTheme] = useState(() => {
         try {
-            const savedTheme = localStorage.getItem('theme');
-            return savedTheme ?? '';
+            const savedTheme = typeof window !== 'undefined' ? localStorage.getItem('theme') : '';
+            return savedTheme;
         } catch (e) {
             console.log(e);
         }
