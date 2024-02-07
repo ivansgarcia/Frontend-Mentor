@@ -22,7 +22,7 @@ module.exports = {
         'shad': '0 0 10px 0 rgba(0, 0, 0, 0.1)',
       },
       aspectRatio: {
-        'flag': '1.4'
+        'flag': '1.6'
       }
     },
   },

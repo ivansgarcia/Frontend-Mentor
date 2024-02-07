@@ -31,8 +31,8 @@ const Navigator = ({ filterBy }) => {
 
     return (
         <div
-            className={`fixed left-0 top-[72px] z-10 flex w-full flex-col justify-between bg-light-background p-4 pb-0 sm:px-0 transition-all dark:bg-dark-background dark:bg-opacity-45 sm:h-28 sm:flex-row sm:items-center sm:justify-center 
-        ${collapsed ? 'h-14 bg-opacity-0' : 'h-56 bg-opacity-45'}
+            className={`fixed left-0 top-[72px] z-10 flex w-full flex-col justify-between bg-light-background p-4 pb-0 sm:px-0 transition-all dark:bg-dark-background sm:h-28 sm:flex-row sm:items-center sm:justify-center 
+        ${collapsed ? 'h-14 bg-opacity-0 dark:bg-opacity-0' : 'h-56 bg-opacity-80 dark:bg-opacity-80'}
             `}
         >
             <div
@@ -40,7 +40,7 @@ const Navigator = ({ filterBy }) => {
             >
                 {!collapsed ? (
                     <>
-                        <div className="background-custom flex h-14 w-full max-w-[520px] cursor-text items-center gap-8 rounded px-8 py-1 shadow-shad transition-colors sm:mt-0 sm:w-3/5">
+                        <div className="background-custom flex h-14 w-full max-w-[450px] cursor-text items-center gap-8 rounded px-8 py-1 shadow-shad transition-colors sm:mt-0">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-6 fill-light-input dark:fill-light-background"
