@@ -4,14 +4,13 @@ import CountryList from './CountryList';
 import CountryDetail from './CountryDetail';
 
 const App = () => {
-    const [theme, setTheme] = useState(() => {
-        try {
-            const savedTheme = typeof window !== 'undefined' ? localStorage.getItem('theme') : '';
-            return savedTheme;
-        } catch (e) {
-            console.log(e);
-        }
-    });
+    const [theme, setTheme] = useState('');
+
+    useEffect(() => {
+        const savedTheme =
+            typeof window !== 'undefined' ? localStorage.getItem('theme') : '';
+        setTheme(savedTheme);
+    }, []);
 
     const [showCountryDetail, setShowCountryDetail] = useState(null);
 
@@ -20,14 +19,8 @@ const App = () => {
     };
 
     useEffect(() => {
-        try {
-            localStorage.setItem('theme', theme);
-        } catch (e) {
-            console.log(e);
-        }
+        localStorage.setItem('theme', theme);
     }, [theme]);
-
-    console.log(theme);
 
     return (
         <div

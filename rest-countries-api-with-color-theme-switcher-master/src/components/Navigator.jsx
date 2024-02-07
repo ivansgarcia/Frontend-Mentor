@@ -165,6 +165,7 @@ const Navigator = ({ filterBy }) => {
                 )}
             </div>
             <button
+                aria-label="scroll to top"
                 onClick={() => window.scrollTo(0, 0)}
                 className={`${
                     collapsed && 'scale-100'
