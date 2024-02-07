@@ -14,6 +14,7 @@ const CountryPreview = ({ country, setShowCountryDetail }) => {
                 onClick={() => setShowCountryDetail(country)}
             >
                 <img
+                    loading="lazy"
                     src={flags.png}
                     className="object-fit aspect-flag w-full sm:h-40"
                     alt="flag"
