@@ -1,0 +1,30 @@
+{
+  "name": "time-tracking-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "time-tracking-dashboard",
+  "author": "ivansalinas",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop -H 0.0.0.0 -p 8000",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "gatsby": "^5.13.2",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "postcss": "^8.4.35",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11"
+  }
+}
