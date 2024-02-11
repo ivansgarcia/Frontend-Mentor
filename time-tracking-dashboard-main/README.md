@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/time-tracking-dashboard-using-gatsbyjs-react-and-tailwind-BuHKkiWR1u
+- Live Site URL: https://peaceful-mochi-050d0e.netlify.app/
 
 ## My process
 
