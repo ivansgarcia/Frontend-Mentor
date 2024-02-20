@@ -6,7 +6,7 @@ import logo from '../images/shared/logo.svg';
 
 const Header = ({ background }) => {
     return (
-        <header className="flex h-[75px] items-center md:h-[96px] justify-between lg:mt-10 lg:ml-4">
+        <header className="flex h-[75px] w-full max-w-[1440px] items-center justify-between md:h-[96px] lg:mt-10 lg:pl-4">
             <Link
                 to="/"
                 className="m-4 rounded-full bg-white md:ml-8"

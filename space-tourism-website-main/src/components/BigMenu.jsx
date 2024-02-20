@@ -3,7 +3,7 @@ import React from 'react';
 
 const BigMenu = ({ background }) => {
     return (
-        <nav className="h-full text-sm max-md:hidden">
+        <nav className="h-full text-sm max-md:hidden lg:text-base">
             <ul className="flex h-24 items-center justify-evenly gap-16 bg-white bg-opacity-[4%] px-12 pt-2 font-barlow-condensed tracking-widest text-white backdrop-blur-3xl lg:pl-36 lg:pr-48">
                 <li className="h-full">
                     <Link

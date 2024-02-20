@@ -14,14 +14,14 @@ const Crew = () => {
 
     return (
         <Layout background="crew">
-            <main className="main-mobile flex-1 gap-8 p-8 pt-2 md:justify-between md:pb-0 md:pt-8 lg:mt-0 lg:flex-1 lg:pt-0">
-                <section className="flex h-full flex-1 flex-col items-center justify-between gap-8 lg:ml-[10%] lg:w-[45%] lg:items-start lg:justify-between lg:self-start lg:overflow-hidden lg:py-32">
+            <main className="main-mobile flex-1 gap-8 p-8 pt-2 md:mt-6 md:justify-between md:overflow-hidden md:pb-0 md:pt-0 lg:mt-0 lg:pt-0">
+                <section className="flex h-full flex-1 flex-col items-center justify-between gap-8 md:my-8 md:justify-around lg:ml-[10%] lg:w-[45%] lg:items-start lg:justify-around lg:self-start lg:py-4">
                     <h3 className="section-title md:self-start lg:justify-self-start">
                         <span className="font-bold opacity-25">02</span>
                         MEET YOUR CREW
                     </h3>
                     <figure
-                        className={`h-[223px] w-full overflow-hidden md:relative md:-bottom-16 md:order-3 md:-mt-12 md:h-[532px] md:w-auto lg:absolute lg:bottom-0 lg:h-[80%] lg:w-auto lg:max-w-[40%]  ${!shipmate ? 'lg:right-[5%]' : 'lg:right-[5%] lg:max-h-[600px]'}`}
+                        className={`h-[223px] w-full overflow-hidden md:relative md:-bottom-16 md:order-3 md:-mt-12 md:h-[532px] md:w-auto lg:absolute lg:bottom-0 lg:h-[80%] ${!shipmate ? 'lg:max-h-[75%]' : 'lg:max-h-[75%]'} lg:left-[55%] lg:w-auto lg:max-w-[40%]`}
                     >
                         <img
                             className={`mx-auto h-full w-full object-contain object-bottom`}
@@ -77,7 +77,7 @@ const Crew = () => {
                             ></button>
                         </li>
                     </ul>
-                    <section className="mb-16 flex flex-col gap-1 text-center md:mb-0 md:mt-4 md:gap-4 lg:gap-8 lg:text-left">
+                    <section className="mb-16 flex flex-col gap-1 text-center md:mb-0 md:gap-4 lg:gap-8 lg:text-left">
                         <h2 className="font-bellefair opacity-50 md:text-2xl lg:text-[32px]">
                             {info[shipmate].role.toUpperCase()}
                         </h2>

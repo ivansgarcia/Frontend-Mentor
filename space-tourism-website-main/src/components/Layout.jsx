@@ -11,12 +11,12 @@ const Layout = ({ children, background }) => {
 
     return (
         <div
-            className={`flex max-w-[1440px] mx-auto relative h-full min-h-screen w-screen flex-col ${backgroundImage[background]} bg-cover bg-no-repeat`}
+            className={`relative flex h-full min-h-screen w-screen flex-col items-center ${backgroundImage[background]} bg-cover bg-no-repeat`}
         >
             <Header background={background} />
-            <main className="flex h-full flex-1 flex-col justify-self-center">
+            <div className="flex max-w-[1440px] flex-1 flex-col justify-self-center">
                 {children}
-            </main>
+            </div>
         </div>
     );
 };

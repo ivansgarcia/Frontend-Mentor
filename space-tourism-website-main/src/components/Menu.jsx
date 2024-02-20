@@ -36,7 +36,7 @@ const Menu = ({ background }) => {
                                 </g>
                             </svg>
                         </button>
-                        <ul className="mt-12 text-base tracking-[2.7px] font-barlow-condensed font-normal">
+                        <ul className="mt-12 font-barlow-condensed text-base font-normal tracking-[2.7px]">
                             <li>
                                 <Link
                                     to="/"

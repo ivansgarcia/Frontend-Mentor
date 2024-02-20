@@ -14,15 +14,15 @@ const Technology = () => {
 
     return (
         <Layout background="technology">
-            <main className="main-mobile flex-1 gap-8 md:py-10 lg:ml-[10%] lg:w-1/2 lg:justify-center lg:py-24">
+            <main className="main-mobile flex-1 gap-8 md:py-10 lg:ml-[10%] lg:w-1/2 lg:justify-center lg:gap-0">
                 <h3 className="section-title md:ml-8 md:self-start lg:ml-0">
                     <span className="font-bold opacity-25">03</span>SPACE LAUNCH
                     101
                 </h3>
                 <div
-                    className={`relative h-[170px] w-full overflow-hidden bg-cover bg-bottom bg-no-repeat md:h-[310px] md:w-full lg:absolute lg:right-0 lg:mt-12 lg:h-[527px] lg:w-[515px] lg:max-w-[40%] lg:bg-contain lg:bg-center ${technologyImages[technology]}`}
+                    className={`relative h-[170px] w-full overflow-hidden bg-cover bg-bottom bg-no-repeat md:h-[310px] md:w-full lg:absolute lg:right-0 lg:top-[270px] lg:h-[527px] lg:w-[515px] lg:max-w-[40%] lg:bg-contain lg:bg-center ${technologyImages[technology]}`}
                 ></div>
-                <section className="flex flex-col items-center gap-8 md:gap-8 lg:mt-[10%] lg:flex-1 lg:flex-row lg:gap-16">
+                <section className="flex flex-col items-center gap-4 md:gap-12 lg:my-8 lg:flex-1 lg:flex-row lg:gap-16">
                     <ul className="flex gap-4 font-bellefair max-md:mb-[5%] md:text-2xl lg:flex-col lg:gap-8">
                         <li>
                             <button
