@@ -16,7 +16,7 @@ const Header = ({ theme, setTheme }) => {
                 <button aria-label="theme" onClick={toggleTheme}>
                     <img
                         className="sm:w-[26px]"
-                        src={`${theme === 'light' ? moonIcon : sunIcon}`}
+                        src={`${theme === ('light' || null)  ? moonIcon : sunIcon}`}
                         alt="theme"
                         width={19}
                     />

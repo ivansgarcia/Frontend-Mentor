@@ -5,10 +5,10 @@ import Header from '../components/Header';
 import { useEffect } from 'react';
 
 const IndexPage = () => {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dark');
 
     useEffect(() => {
-        typeof window !== undefined && setTheme(localStorage.getItem('theme'))
+        typeof window !== undefined && setTheme(localStorage.getItem('theme') ?? 'dark')
     }, []);
 
     useEffect(() => {
