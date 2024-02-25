@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&700&display=swap');
+
+@layer components {
+    .text-style {
+        @apply text-xs tracking-[-0.015em] sm:text-[18px] text-light-theme-very-dark-grayish-blue dark:font-normal dark:text-dark-theme-light-grayish-blue;
+    }
+    .bg-colors {
+        @apply bg-light-theme-very-light-gray transition-colors duration-500 dark:bg-dark-theme-very-dark-desaturated-blue;
+    }
+    .todo-element {
+        @apply bg-colors flex w-full items-center gap-3 px-5 sm:gap-6 sm:px-6;
+    }
+    .app-bg-colors {
+        @apply bg-light-theme-very-light-grayish-blue dark:bg-dark-theme-very-dark-blue;
+    }
+}
