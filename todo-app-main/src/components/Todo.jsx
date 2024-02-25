@@ -18,8 +18,8 @@ const Todo = ({ todo, index, remove, toggleCompleted }) => {
             >
                 {todo.text}
             </p>
-            <button onClick={() => remove(index)}>
-                <img src={removeIcon} alt="delete" width={12} />
+            <button className="-mr-1" onClick={() => remove(index)}>
+                <img className="m-1" src={removeIcon} alt="delete" width={12} />
             </button>
         </div>
     );

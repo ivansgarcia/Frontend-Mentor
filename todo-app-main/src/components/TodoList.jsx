@@ -4,6 +4,7 @@ import Todo from './Todo';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import NewTodo from './NewTodo';
 import Filter from './Filter';
+import { useEffect } from "react";
 
 const TodoList = () => {
     const defaultTodoList = [
@@ -32,7 +33,18 @@ const TodoList = () => {
             completed: false,
         },
     ];
-    const [todoList, setTodoList] = useState(defaultTodoList);
+    const [todoList, setTodoList] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return JSON.parse(localStorage.getItem('savedList')) ?? defaultTodoList;
+        } else {
+            return defaultTodoList;
+        }
+    });
+
+    useEffect(() => {
+        localStorage.setItem('savedList', JSON.stringify(todoList));
+    }, [todoList]);
+
     const [filter, setFilter] = useState(null);
 
     const reorder = (list, startIndex, endIndex) => {
@@ -108,6 +120,12 @@ const TodoList = () => {
     return (
         <div className="mx-auto flex max-w-[540px] flex-col items-center">
             <NewTodo addTodo={addTodo} />
+            {!filteredList(filter).length ? (
+                <p className="todo-element w-full h-[50px] text-center text-style rounded-t-[5px] justify-center">No items...</p>
+            )
+            :
+            (
+
             <DragDropContext onDragEnd={onDragEnd} onDragUpdate={onDragUpdate}>
                 <Droppable droppableId="droppable">
                     {(provided) => (
@@ -145,6 +163,8 @@ const TodoList = () => {
                     )}
                 </Droppable>
             </DragDropContext>
+            )
+            }
             <div className="flex h-[50px] w-full items-center justify-between rounded-b-[5px] bg-light-theme-very-light-gray px-5 text-xs tracking-tight text-light-theme-dark-grayish-blue transition-colors duration-500 dark:bg-dark-theme-very-dark-desaturated-blue dark:text-dark-theme-dark-grayish-blue sm:h-[50px] sm:px-6 sm:text-sm ">
                 <span>
                     {todoList.filter((t) => !t.completed).length} items left
