@@ -20,7 +20,7 @@ const Technology = () => {
                     101
                 </h3>
                 <div
-                    className={`relative h-[170px] w-full overflow-hidden bg-cover bg-bottom bg-no-repeat md:h-[310px] md:w-full lg:absolute lg:right-0 lg:top-[270px] lg:h-[527px] lg:w-[515px] lg:max-w-[40%] lg:bg-contain lg:bg-center ${technologyImages[technology]}`}
+                    className={`relative h-[170px] w-full overflow-hidden bg-cover bg-bottom bg-no-repeat md:h-[310px] md:w-full lg:absolute lg:right-0 lg:top-[23%] lg:h-[527px] lg:w-[515px] lg:max-w-[40%] lg:bg-contain lg:bg-center ${technologyImages[technology]}`}
                 ></div>
                 <section className="flex flex-col items-center gap-4 md:gap-12 lg:my-8 lg:flex-1 lg:flex-row lg:gap-16">
                     <ul className="flex gap-4 font-bellefair max-md:mb-[5%] md:text-2xl lg:flex-col lg:gap-8">

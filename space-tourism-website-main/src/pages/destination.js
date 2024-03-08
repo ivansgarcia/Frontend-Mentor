@@ -14,8 +14,8 @@ const Destination = () => {
 
     return (
         <Layout background="destination">
-            <main className="main-mobile flex-1 gap-4 p-8 pt-2 md:justify-between md:pt-10 lg:flex-row lg:justify-between lg:px-32 lg:pt-0">
-                <section className="flex h-full w-full flex-col items-center justify-between gap-4 md:gap-8 lg:w-1/2 lg:gap-20">
+            <main className="main-mobile flex-1 gap-4 p-8 pt-2 md:justify-between md:pt-10 lg:flex-row lg:justify-between lg:px-32 lg:p-0 justify-self-end">
+                <section className="flex h-full w-full flex-col items-center justify-between gap-4 md:gap-8 lg:w-1/2">
                     <h3 className="section-title md:self-start">
                         <span className="font-bold opacity-25 lg:text-[28px]">
                             01
@@ -23,13 +23,13 @@ const Destination = () => {
                         PICK YOUR DESTINATION
                     </h3>
                     <img
-                        className="m-4 w-[170px] md:w-[300px] lg:w-[445px] lg:self-center lg:p-0"
+                        className="m-4 w-[170px] md:w-[300px] lg:w-[445px] lg:self-center lg:p-0 lg:m-0"
                         src={images[target]}
                         alt="moon"
                         width={200}
                     />
                 </section>
-                <section className="flex flex-col items-center justify-around gap-4 lg:m-4 lg:mt-16 lg:w-2/5 lg:items-start">
+                <section className="flex flex-col items-center justify-around gap-4 lg:m-4  lg:w-2/5 lg:items-start">
                     <ul className="flex h-[34px] justify-evenly gap-6 font-barlow-condensed text-[14px] text-text-grey md:gap-[34px] md:text-base">
                         <li>
                             <button
@@ -64,7 +64,7 @@ const Destination = () => {
                                 }`}
                                 onClick={() => setTarget(2)}
                             >
-                                EUROPE
+                                EUROPA
                             </button>
                         </li>
                         <li>

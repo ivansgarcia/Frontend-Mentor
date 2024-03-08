@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 const IndexPage = () => {
     return (
         <Layout background="home">
-            <main className="main-mobile px-6 md:justify-between md:p-24 lg:flex-row lg:items-center lg:pb-0">
+            <main className="main-mobile px-6 md:justify-between md:p-24 lg:flex-row lg:items-center lg:py-0">
                 <section className="flex flex-col items-center justify-center text-white lg:ml-[5%] lg:w-2/5 lg:items-start">
                     <h3 className="font-barlow-condensed text-base tracking-[2.7px] text-text-grey md:text-xl md:tracking-[3.38px] lg:text-[28px] lg:tracking-[4.72px]">
                         SO, YOU WANT TO TRAVEL TO
